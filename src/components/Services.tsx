@@ -1,4 +1,4 @@
-import { Package, Truck, Sofa, Wrench, Clock, ChefHat } from "lucide-react";
+import { Package, Truck, Sofa, Wrench, Box, ChefHat } from "lucide-react";
 import deliveryTeam from "@/assets/delivery-team.jpg";
 import installation from "@/assets/installation.jpg";
 
@@ -24,9 +24,9 @@ const services = [
     description: "Profesionální instalace a montáž domácích spotřebičů. Naši technici mají letité zkušenosti s vestavnými spotřebiči.",
   },
   {
-    icon: Clock,
-    title: "Expresní přeprava",
-    description: "Urgentní zásilky doručíme tentýž den. Flexibilní časová okna podle vašich potřeb.",
+    icon: Box,
+    title: "Zásobování výdejních boxů",
+    description: "Spolehlivé zásobování Alzaboxů a dalších výdejních míst. Pravidelné trasy s pevným rozvrhem a 100% spolehlivostí doručení.",
   },
   {
     icon: ChefHat,
