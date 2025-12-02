@@ -16,9 +16,9 @@ const clients = [
 
 const Clients = () => {
   return (
-    <section className="py-12 bg-muted">
+    <section className="py-4 bg-muted">
       <div className="container-wide px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-4">
           <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-4">
             Důvěřují nám
           </span>
