@@ -1,4 +1,4 @@
-import { Package, Truck, Sofa, Wrench, Clock, Shield } from "lucide-react";
+import { Package, Truck, Sofa, Wrench, Clock, ChefHat } from "lucide-react";
 import deliveryTeam from "@/assets/delivery-team.jpg";
 import installation from "@/assets/installation.jpg";
 
@@ -29,7 +29,7 @@ const services = [
     description: "Urgentní zásilky doručíme tentýž den. Flexibilní časová okna podle vašich potřeb.",
   },
   {
-    icon: Shield,
+    icon: ChefHat,
     title: "Montáže kuchyní",
     description: "Kompletní montáž kuchyňských linek včetně spotřebičů. Od zaměření po finální úklid.",
   },
