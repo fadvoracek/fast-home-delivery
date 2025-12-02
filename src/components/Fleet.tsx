@@ -44,7 +44,7 @@ const vehicles = [
 
 const Fleet = () => {
   return (
-    <section id="vozidla" className="section-padding bg-muted">
+    <section id="vozidla" className="section-padding pt-4 bg-muted">
       <div className="container-wide">
         <div className="text-center mb-16">
           <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-4">
