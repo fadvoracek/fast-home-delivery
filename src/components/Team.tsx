@@ -1,4 +1,8 @@
 import { Mail, Phone } from "lucide-react";
+import jiriDvoracekImg from "@/assets/team/jiri-dvoracek.png";
+import simonaLhotkovaImg from "@/assets/team/simona-lhotkova.png";
+import karolinaSonhotImg from "@/assets/team/karolina-sonhot.png";
+import pavolSrpImg from "@/assets/team/pavol-srp.png";
 
 const teamMembers = [
   {
@@ -6,24 +10,28 @@ const teamMembers = [
     role: "Jednatel společnosti",
     email: "dvoracek@fa-dvoracek.cz",
     phone: "+420 732 345 136",
+    image: jiriDvoracekImg,
   },
   {
     name: "Simona Lhotková",
     role: "Manažerka XL služeb a balíkové přepravy",
     email: "lhotkova@fa-dvoracek.cz",
     phone: "+420 603 960 784",
+    image: simonaLhotkovaImg,
   },
   {
     name: "Karolína Sonhot",
     role: "Personální manažerka a administrativní podpora",
     email: "sonhot@fa-dvoracek.cz",
     phone: "+420 605 432 123",
+    image: karolinaSonhotImg,
   },
   {
     name: "Pavol Srp",
     role: "Manažer služeb výdejních boxů a dispečinku",
     email: "dispecink@fa-dvoracek.cz",
     phone: "+420 123 456 789",
+    image: pavolSrpImg,
   },
 ];
 
@@ -49,10 +57,12 @@ const Team = () => {
               key={index}
               className="bg-card rounded-xl p-6 shadow-soft hover:shadow-lg transition-all duration-300 border border-border/50 group"
             >
-              <div className="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary-foreground">
-                  {member.name.split(' ').map(n => n[0]).slice(0, 2).join('')}
-                </span>
+              <div className="w-24 h-24 mx-auto mb-4 overflow-hidden rounded-full bg-muted">
+                <img 
+                  src={member.image} 
+                  alt={member.name}
+                  className="w-full h-full object-cover"
+                />
               </div>
               
               <h3 className="text-lg font-bold text-foreground text-center mb-1">
