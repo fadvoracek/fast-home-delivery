@@ -37,9 +37,9 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <section id="tym" className="py-8 md:py-10 bg-background">
+    <section id="tym" className="py-4 md:py-6 bg-background">
       <div className="container-wide px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-6">
           <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-4">
             Náš tým
           </span>
