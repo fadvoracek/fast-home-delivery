@@ -19,16 +19,16 @@ const Header = () => {
       <div className="bg-primary text-primary-foreground py-2 px-4">
         <div className="container-wide flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
-            <a href="tel:+420603000000" className="flex items-center gap-2 hover:text-secondary transition-colors">
+            <a href="tel:+420732345136" className="flex items-center gap-2 hover:text-secondary transition-colors">
               <Phone className="w-4 h-4" />
-              <span className="hidden sm:inline">+420 603 000 000</span>
+              <span className="hidden sm:inline">+420 732 345 136</span>
             </a>
             <a href="mailto:info@fa-dvoracek.cz" className="flex items-center gap-2 hover:text-secondary transition-colors">
               <Mail className="w-4 h-4" />
               <span className="hidden sm:inline">info@fa-dvoracek.cz</span>
             </a>
           </div>
-          <span className="text-primary-foreground/80 hidden md:block">Doprava po celé ČR</span>
+          <span className="text-primary-foreground/80 hidden md:block">Doprava po celé ČR a Evropě</span>
         </div>
       </div>
 
