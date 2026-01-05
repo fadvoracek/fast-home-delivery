@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,14 +37,12 @@ const Header = () => {
       {/* Main nav */}
       <nav className="container-wide py-4 px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          <a href="#" className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center shadow-soft">
-              <span className="text-primary-foreground font-bold text-xl">FA</span>
-            </div>
-            <div>
-              <span className="font-bold text-sm sm:text-lg text-foreground">FA Dvořáček</span>
-              <span className="text-muted-foreground text-xs sm:text-sm block">s.r.o.</span>
-            </div>
+          <a href="#" className="flex items-center">
+            <img 
+              src={logo} 
+              alt="FA Dvořáček s.r.o." 
+              className="h-10 sm:h-12 w-auto"
+            />
           </a>
 
           {/* Desktop nav */}
