@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-van.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden overflow-x-hidden">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -14,9 +14,9 @@ const Hero = () => {
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-hero" />
       
-      {/* Decorative elements */}
-      <div className="absolute top-1/4 right-10 w-72 h-72 bg-secondary/20 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 left-10 w-96 h-96 bg-primary/30 rounded-full blur-3xl" />
+      {/* Decorative elements - hidden on mobile to prevent overflow */}
+      <div className="hidden md:block absolute top-1/4 right-10 w-72 h-72 bg-secondary/20 rounded-full blur-3xl" />
+      <div className="hidden md:block absolute bottom-1/4 left-10 w-96 h-96 bg-primary/30 rounded-full blur-3xl" />
 
       <div className="container-wide px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-3xl">
