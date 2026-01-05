@@ -59,8 +59,8 @@ const Header = () => {
           </div>
 
           <div className="hidden lg:flex items-center gap-4">
-            <Button variant="secondary" size="lg">
-              Poptávka
+            <Button variant="secondary" size="lg" asChild>
+              <a href="#kontakt">Poptávka</a>
             </Button>
           </div>
 
@@ -87,8 +87,8 @@ const Header = () => {
                   {link.label}
                 </a>
               ))}
-              <Button variant="secondary" className="mt-2">
-                Poptávka
+              <Button variant="secondary" className="mt-2" asChild>
+                <a href="#kontakt">Poptávka</a>
               </Button>
             </div>
           </div>
