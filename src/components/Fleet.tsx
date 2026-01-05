@@ -1,40 +1,40 @@
-import vanDucato from "@/assets/van-ducato.jpg";
-import vanProace from "@/assets/van-proace.jpg";
-import vanMaster from "@/assets/van-master.jpg";
-import truckCurtainside from "@/assets/truck-curtainside.jpg";
-import pickupTrailer from "@/assets/pickup-trailer.jpg";
+import dodavka from "@/assets/dodavka.webp";
+import pickup from "@/assets/pickup.jpeg";
+import plachta from "@/assets/plachta.jpg";
+import kamion from "@/assets/kamion.jpg";
+import prives from "@/assets/prives.avif";
 
 const vehicles = [
   {
-    image: pickupTrailer,
+    image: prives,
     title: "Osobní vůz s přívěsem",
     capacity: "do 750 kg",
     description: "Ideální pro menší zásilky a doručení do míst s omezeným přístupem.",
     dimensions: "Délka nákladu: 2,5 m",
   },
   {
-    image: vanProace,
+    image: pickup,
     title: "Pickup / malá dodávka",
     capacity: "do 1 000 kg",
     description: "Pro střední zásilky a flexibilní městskou dopravu.",
     dimensions: "Ložný prostor: 4 m³",
   },
   {
-    image: vanDucato,
+    image: dodavka,
     title: "Dodávka L4H2",
     capacity: "do 1 500 kg",
     description: "Naše nejčastější vozidlo. Fiat Ducato, Toyota Proace, Renault Master.",
     dimensions: "Ložný prostor: 13-17 m³",
   },
   {
-    image: vanMaster,
+    image: plachta,
     title: "Plachtová dodávka",
     capacity: "do 1 500 kg",
     description: "Pro nadrozměrné a objemné zásilky s možností bočního nakládání.",
     dimensions: "Ložný prostor: 20 m³",
   },
   {
-    image: truckCurtainside,
+    image: kamion,
     title: "Kamion",
     capacity: "do 24 000 kg",
     description: "Pro velkoobjemové přepravy a paletové zásilky po celé Evropě.",
