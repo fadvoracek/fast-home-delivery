@@ -17,15 +17,16 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border">
       {/* Top bar */}
       <div className="bg-primary text-primary-foreground py-2 px-4">
-        <div className="container-wide flex justify-between items-center text-sm">
-          <div className="flex items-center gap-6">
-            <a href="tel:+420732345136" className="flex items-center gap-2 hover:text-secondary transition-colors">
-              <Phone className="w-4 h-4" />
-              <span className="hidden sm:inline">+420 732 345 136</span>
+        <div className="container-wide flex justify-between items-center text-xs sm:text-sm">
+          <div className="flex items-center gap-2 sm:gap-6">
+            <a href="tel:+420732345136" className="flex items-center gap-1 sm:gap-2 hover:text-secondary transition-colors">
+              <Phone className="w-3 h-3 sm:w-4 sm:h-4" />
+              <span>+420 732 345 136</span>
             </a>
-            <a href="mailto:info@fa-dvoracek.cz" className="flex items-center gap-2 hover:text-secondary transition-colors">
-              <Mail className="w-4 h-4" />
-              <span className="hidden sm:inline">info@fa-dvoracek.cz</span>
+            <a href="mailto:info@fa-dvoracek.cz" className="flex items-center gap-1 sm:gap-2 hover:text-secondary transition-colors">
+              <Mail className="w-3 h-3 sm:w-4 sm:h-4" />
+              <span className="hidden xs:inline sm:inline">info@fa-dvoracek.cz</span>
+              <span className="xs:hidden sm:hidden">Email</span>
             </a>
           </div>
           <span className="text-primary-foreground/80 hidden md:block">Doprava po celé ČR a Evropě</span>
@@ -39,9 +40,9 @@ const Header = () => {
             <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center shadow-soft">
               <span className="text-primary-foreground font-bold text-xl">FA</span>
             </div>
-            <div className="hidden sm:block">
-              <span className="font-bold text-lg text-foreground">FA Dvořáček</span>
-              <span className="text-muted-foreground text-sm block">s.r.o.</span>
+            <div>
+              <span className="font-bold text-sm sm:text-lg text-foreground">FA Dvořáček</span>
+              <span className="text-muted-foreground text-xs sm:text-sm block">s.r.o.</span>
             </div>
           </a>
 
