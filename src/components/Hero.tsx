@@ -61,7 +61,7 @@ const Hero = () => {
                 <Package className="w-6 h-6 text-secondary" />
               </div>
               <div>
-                <span className="text-2xl font-bold text-card">5000+</span>
+                <span className="text-2xl font-bold text-card">100 000+</span>
                 <p className="text-card/70 text-sm">zásilek/měsíc</p>
               </div>
             </div>
