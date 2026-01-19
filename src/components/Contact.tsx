@@ -153,7 +153,7 @@ const Contact = () => {
                 </label>
                 <textarea
                   required
-                  rows={4}
+                  rows={6}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
