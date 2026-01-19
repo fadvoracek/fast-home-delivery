@@ -51,8 +51,8 @@ const Footer = () => {
             <ul className="space-y-3 text-background/70 text-sm">
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-secondary" />
-                <a href="tel:+420603000000" className="hover:text-secondary transition-colors">
-                  +420 603 000 000
+                <a href="tel:+420732345136" className="hover:text-secondary transition-colors">
+                  +420 732 345 136
                 </a>
               </li>
               <li className="flex items-center gap-2">
@@ -63,7 +63,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-secondary mt-0.5" />
-                <span>Praha – Chrášťany</span>
+                <span>Kurzova 2222/16, 155 00 Praha</span>
               </li>
             </ul>
           </div>
