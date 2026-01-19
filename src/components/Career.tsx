@@ -68,9 +68,9 @@ const Career = () => {
               Hledáme posily do týmu
             </h2>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-71:               Staň se součástí našeho týmu a získej nadstandardní finanční ohodnocení! 
-72:               Nabízíme stabilní zázemí české firmy, nové vozidlo a férový přístup.
-73:             </p>
+              Staň se součástí našeho týmu a získej nadstandardní finanční ohodnocení! 
+              Nabízíme stabilní zázemí české firmy, nové vozidlo a férový přístup.
+            </p>
 
             <div className="grid sm:grid-cols-2 gap-4 mb-8">
               {benefits.map((benefit) => (
