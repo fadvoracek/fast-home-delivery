@@ -5,18 +5,18 @@ import deliveryCustomer from "@/assets/delivery-customer.jpg";
 const benefits = [
   {
     icon: Banknote,
-    title: "Až 3000 Kč denně",
-    description: "Nadstandardní finanční ohodnocení s jasným výdělkem",
+    title: "Nadstandardní ohodnocení",
+    description: "Férové finanční podmínky s jasným výdělkem",
   },
   {
     icon: Car,
     title: "Nový vozový park",
-    description: "Dostaneš vlastní novou dodávku L4H2",
+    description: "Dostaneš novou dodávku značky Toyota, Fiat, nebo Renault",
   },
   {
     icon: Clock,
     title: "Flexibilní spolupráce",
-    description: "Možnost práce na IČO nebo brigádně",
+    description: "Možnost spolupráce na HPP, DPP, nebo IČO",
   },
   {
     icon: Users,
@@ -68,9 +68,9 @@ const Career = () => {
               Hledáme posily do týmu
             </h2>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-              Staň se součástí našeho týmu a vydělávej až 3000 Kč denně! 
-              Nabízíme stabilní zázemí české firmy, nové vozidlo a férový přístup.
-            </p>
+71:               Staň se součástí našeho týmu a získej nadstandardní finanční ohodnocení! 
+72:               Nabízíme stabilní zázemí české firmy, nové vozidlo a férový přístup.
+73:             </p>
 
             <div className="grid sm:grid-cols-2 gap-4 mb-8">
               {benefits.map((benefit) => (
