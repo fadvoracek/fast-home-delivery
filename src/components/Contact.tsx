@@ -45,7 +45,7 @@ const Contact = () => {
               </h3>
               <div className="space-y-4">
                 <a
-                  href="tel:+420603000000"
+                  href="tel:+420732345136"
                   className="flex items-center gap-4 text-primary-foreground/90 hover:text-primary-foreground transition-colors"
                 >
                   <div className="w-12 h-12 bg-primary-foreground/10 rounded-xl flex items-center justify-center">
@@ -53,7 +53,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="text-sm text-primary-foreground/70">Telefon</div>
-                    <div className="font-semibold">+420 603 000 000</div>
+                    <div className="font-semibold">+420 732 345 136</div>
                   </div>
                 </a>
                 <a
@@ -74,7 +74,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="text-sm text-primary-foreground/70">Adresa</div>
-                    <div className="font-semibold">Praha – Chrášťany</div>
+                    <div className="font-semibold">Kurzova 2222/16, 155 00 Praha</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4 text-primary-foreground/90">
@@ -83,7 +83,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="text-sm text-primary-foreground/70">Provozní doba</div>
-                    <div className="font-semibold">Po–Pá: 6:00 – 18:00</div>
+                    <div className="font-semibold">Po–Ne: 6:00 – 20:00</div>
                   </div>
                 </div>
               </div>
@@ -93,9 +93,8 @@ const Contact = () => {
               <h4 className="font-semibold text-foreground mb-3">Fakturační údaje</h4>
               <div className="text-muted-foreground space-y-1 text-sm">
                 <p><strong>FA Dvořáček s.r.o.</strong></p>
-                <p>IČO: 12345678</p>
-                <p>DIČ: CZ12345678</p>
-                <p>Společnost zapsána v OR u MS v Praze</p>
+                <p>Kurzova 2222/16, 155 00 Praha</p>
+                <p>Společnost je zapsána v obchodním rejstříku vedeném Městským soudem v Praze oddíl C, vložka 377559.</p>
               </div>
             </div>
           </div>
