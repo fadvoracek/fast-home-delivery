@@ -94,6 +94,8 @@ const Contact = () => {
               <div className="text-muted-foreground space-y-1 text-sm">
                 <p><strong>FA Dvořáček s.r.o.</strong></p>
                 <p>Kurzova 2222/16, 155 00 Praha</p>
+                <p>IČO: 12345678</p>
+                <p>DIČ: CZ12345678</p>
                 <p>Společnost je zapsána v obchodním rejstříku vedeném Městským soudem v Praze oddíl C, vložka 377559.</p>
               </div>
             </div>
