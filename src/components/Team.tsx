@@ -6,32 +6,24 @@ const teamMembers = [
     role: "Jednatel společnosti",
     email: "dvoracek@fa-dvoracek.cz",
     phone: "+420 732 345 136",
-    gradient: "from-primary via-primary/70 to-primary/40",
-    initials: "JD",
   },
   {
     name: "Simona Lhotková",
     role: "Manažerka XL služeb a balíkové přepravy",
     email: "lhotkova@fa-dvoracek.cz",
     phone: "+420 603 960 784",
-    gradient: "from-foreground via-foreground/70 to-foreground/40",
-    initials: "SL",
   },
   {
     name: "Karolína Sonhot",
     role: "Personální manažerka a administrativní podpora",
     email: "sonhot@fa-dvoracek.cz",
     phone: "+420 605 432 123",
-    gradient: "from-primary/80 via-secondary to-primary/60",
-    initials: "KS",
   },
   {
     name: "Pavol Srp",
     role: "Manažer služeb výdejních boxů a dispečinku",
     email: "dispecink@fa-dvoracek.cz",
     phone: "+420 123 456 789",
-    gradient: "from-foreground/80 via-muted-foreground to-foreground/50",
-    initials: "PS",
   },
 ];
 
@@ -55,36 +47,30 @@ const Team = () => {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="bg-card rounded-xl p-6 shadow-soft hover:shadow-lg transition-all duration-300 border border-border/50 group"
+              className="bg-card rounded-xl p-6 shadow-soft hover:shadow-lg transition-all duration-300 border border-border/50 group hover:border-primary/30"
             >
-              <div 
-                className={`w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br ${member.gradient} flex items-center justify-center shadow-lg`}
-              >
-                <span className="text-2xl font-bold text-white drop-shadow-md">
-                  {member.initials}
-                </span>
+              <div className="border-l-4 border-primary pl-4 mb-4">
+                <h3 className="text-lg font-bold text-foreground">
+                  {member.name}
+                </h3>
+                <p className="text-secondary text-sm font-medium">
+                  {member.role}
+                </p>
               </div>
-              
-              <h3 className="text-lg font-bold text-foreground text-center mb-1">
-                {member.name}
-              </h3>
-              <p className="text-secondary text-sm text-center mb-4 font-medium">
-                {member.role}
-              </p>
               
               <div className="space-y-2">
                 <a
                   href={`mailto:${member.email}`}
-                  className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm justify-center"
+                  className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm"
                 >
-                  <Mail className="w-4 h-4" />
+                  <Mail className="w-4 h-4 shrink-0" />
                   <span className="truncate">{member.email}</span>
                 </a>
                 <a
                   href={`tel:${member.phone.replace(/\s/g, '')}`}
-                  className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm justify-center"
+                  className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm"
                 >
-                  <Phone className="w-4 h-4" />
+                  <Phone className="w-4 h-4 shrink-0" />
                   <span>{member.phone}</span>
                 </a>
               </div>
