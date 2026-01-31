@@ -19,8 +19,6 @@ const vehicles = [
     capacity: "do 1 000 kg",
     description: "Pro střední zásilky a flexibilní městskou dopravu.",
     dimensions: "Ložný prostor: 4 m³",
-    // Fine-tuned crop so the vehicle sits higher within the fixed-height card
-    imageClassName: "object-[50%_0%]",
   },
   {
     image: dodavka,
@@ -81,9 +79,7 @@ const Fleet = () => {
                 <img
                   src={vehicle.image}
                   alt={vehicle.title}
-                  className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 ${
-                    vehicle.imageClassName ?? ""
-                  }`}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute top-4 right-4 bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-sm font-semibold">
                   {vehicle.capacity}
