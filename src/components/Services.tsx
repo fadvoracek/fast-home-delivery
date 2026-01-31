@@ -1,4 +1,4 @@
-import { Package, Truck, Sofa, Wrench, Box, ChefHat } from "lucide-react";
+import { Package, Truck, Sofa, Wrench, Box, Pill } from "lucide-react";
 import deliveryTeam from "@/assets/delivery-team.jpg";
 import installation from "@/assets/installation.jpg";
 
@@ -29,9 +29,9 @@ const services = [
     description: "Spolehlivé zásobování Alzaboxů a dalších výdejních míst. Pravidelné trasy s pevným rozvrhem a 100% spolehlivostí doručení.",
   },
   {
-    icon: ChefHat,
-    title: "Montáže kuchyní",
-    description: "Kompletní montáž kuchyňských linek včetně spotřebičů. Od zaměření po finální úklid.",
+    icon: Pill,
+    title: "Přeprava léčiv",
+    description: "Specializovaná přeprava farmaceutických produktů a léčiv s dodržením teplotního režimu. Certifikovaná GDP přeprava s trasováním zásilek v reálném čase.",
   },
 ];
 
