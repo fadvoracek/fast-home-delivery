@@ -1,10 +1,18 @@
-import dodavka from "@/assets/dodavka-new.jpg";
+import osobniDodavka from "@/assets/osobni-dodavka.jpg";
 import pickup from "@/assets/pickup-new.jpg";
+import dodavka from "@/assets/dodavka-new.jpg";
 import plachta from "@/assets/plachta-new.jpg";
 import soloHydraulic from "@/assets/solo-hydraulic.jpg";
 import navesovaSouprava from "@/assets/navesova-souprava.jpg";
 
 const vehicles = [
+  {
+    image: osobniDodavka,
+    title: "Osobní dodávka",
+    capacity: "do 500 kg",
+    description: "Mercedes-Benz V-Class pro expresní a VIP přepravy.",
+    dimensions: "Ložný prostor: 2 m³",
+  },
   {
     image: pickup,
     title: "Pickup / malá dodávka",
