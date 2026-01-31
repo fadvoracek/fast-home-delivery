@@ -31,7 +31,7 @@ const services = [
   {
     icon: Pill,
     title: "Přeprava léčiv",
-    description: "Specializovaná přeprava farmaceutických produktů a léčiv s dodržením teplotního režimu. Certifikovaná GDP přeprava s trasováním zásilek v reálném čase.",
+    description: "Specializovaná přeprava farmaceutických produktů a léčiv s dodržením teplotního režimu. Spolehlivé doručení s trasováním zásilek v reálném čase.",
   },
 ];
 
