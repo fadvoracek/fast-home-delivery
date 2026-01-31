@@ -19,7 +19,8 @@ const vehicles = [
     capacity: "do 1 000 kg",
     description: "Pro střední zásilky a flexibilní městskou dopravu.",
     dimensions: "Ložný prostor: 4 m³",
-    imageClassName: "object-top",
+    // Fine-tuned crop so the vehicle sits higher within the fixed-height card
+    imageClassName: "object-[50%_20%]",
   },
   {
     image: dodavka,
