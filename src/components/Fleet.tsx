@@ -14,7 +14,7 @@ const vehicles = [
   },
   {
     image: dodavka,
-    title: "Dodávka L4H2",
+    title: "Dodávka furgon",
     capacity: "do 1 500 kg",
     description: "Naše nejčastější vozidlo. Fiat Ducato, Toyota Proace, Renault Master.",
     dimensions: "Ložný prostor: 13-17 m³",
