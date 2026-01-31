@@ -1,8 +1,8 @@
-import dodavka from "@/assets/dodavka.webp";
-import pickup from "@/assets/pickup.jpeg";
-import plachta from "@/assets/plachta.jpg";
-import kamion from "@/assets/kamion.jpg";
-import prives from "@/assets/prives.avif";
+import dodavka from "@/assets/dodavka-new.jpg";
+import pickup from "@/assets/pickup-new.jpg";
+import plachta from "@/assets/plachta-new.jpg";
+import kamion from "@/assets/kamion-new.jpg";
+import prives from "@/assets/prives.jpg";
 
 const vehicles = [
   {
