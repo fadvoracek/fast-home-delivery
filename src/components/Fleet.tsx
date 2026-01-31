@@ -1,17 +1,10 @@
 import dodavka from "@/assets/dodavka-new.jpg";
 import pickup from "@/assets/pickup-new.jpg";
 import plachta from "@/assets/plachta-new.jpg";
-import kamion from "@/assets/kamion-new.jpg";
-import prives from "@/assets/prives.jpg";
+import soloHydraulic from "@/assets/solo-hydraulic.jpg";
+import navesovaSouprava from "@/assets/navesova-souprava.jpg";
 
 const vehicles = [
-  {
-    image: prives,
-    title: "Osobní vůz s přívěsem",
-    capacity: "do 750 kg",
-    description: "Ideální pro menší zásilky a doručení do míst s omezeným přístupem.",
-    dimensions: "Délka nákladu: 2,5 m",
-  },
   {
     image: pickup,
     title: "Pickup / malá dodávka",
@@ -34,8 +27,15 @@ const vehicles = [
     dimensions: "Ložný prostor: 20 m³",
   },
   {
-    image: kamion,
-    title: "Kamion",
+    image: soloHydraulic,
+    title: "Sólo s hydraulickým čelem",
+    capacity: "do 6 000 kg",
+    description: "Pro těžší zásilky s možností snadného nakládání pomocí hydraulického čela.",
+    dimensions: "Ložný prostor: 40 m³",
+  },
+  {
+    image: navesovaSouprava,
+    title: "Návěsová souprava",
     capacity: "do 24 000 kg",
     description: "Pro velkoobjemové přepravy a paletové zásilky po celé Evropě.",
     dimensions: "Ložný prostor: 90 m³",
