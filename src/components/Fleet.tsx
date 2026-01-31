@@ -19,6 +19,8 @@ const vehicles = [
     capacity: "do 1 000 kg",
     description: "Pro střední zásilky a flexibilní městskou dopravu.",
     dimensions: "Ložný prostor: 4 m³",
+    // Make the pickup sit visibly higher within the fixed-height image frame
+    transformClassName: "scale-110 -translate-y-8 group-hover:scale-115",
   },
   {
     image: dodavka,
@@ -79,7 +81,9 @@ const Fleet = () => {
                 <img
                   src={vehicle.image}
                   alt={vehicle.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 ${
+                    (vehicle as { transformClassName?: string }).transformClassName ?? ""
+                  }`}
                 />
                 <div className="absolute top-4 right-4 bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-sm font-semibold">
                   {vehicle.capacity}
