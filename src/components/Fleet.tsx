@@ -1,26 +1,16 @@
-import osobniDodavka from "@/assets/osobni-dodavka.jpg";
-import pickup from "@/assets/pickup-new.jpg";
 import dodavka from "@/assets/dodavka-new.jpg";
+import pickup from "@/assets/pickup-new.jpg";
 import plachta from "@/assets/plachta-new.jpg";
 import soloHydraulic from "@/assets/solo-hydraulic.jpg";
 import navesovaSouprava from "@/assets/navesova-souprava.jpg";
 
 const vehicles = [
   {
-    image: osobniDodavka,
-    title: "Osobní dodávka",
-    capacity: "do 500 kg",
-    description: "Mercedes-Benz V-Class pro expresní a VIP přepravy.",
-    dimensions: "Ložný prostor: 2 m³",
-  },
-  {
     image: pickup,
     title: "Pickup / malá dodávka",
     capacity: "do 1 000 kg",
     description: "Pro střední zásilky a flexibilní městskou dopravu.",
     dimensions: "Ložný prostor: 4 m³",
-    // Make the pickup sit visibly higher within the fixed-height image frame
-    transformClassName: "scale-110 -translate-y-8 group-hover:scale-115",
   },
   {
     image: dodavka,
@@ -42,8 +32,6 @@ const vehicles = [
     capacity: "do 6 000 kg",
     description: "Pro těžší zásilky s možností snadného nakládání pomocí hydraulického čela.",
     dimensions: "Ložný prostor: 40 m³",
-    // Smaller scale and centered positioning
-    transformClassName: "scale-90 translate-x-4",
   },
   {
     image: navesovaSouprava,
@@ -83,9 +71,7 @@ const Fleet = () => {
                 <img
                   src={vehicle.image}
                   alt={vehicle.title}
-                  className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 ${
-                    (vehicle as { transformClassName?: string }).transformClassName ?? ""
-                  }`}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute top-4 right-4 bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-sm font-semibold">
                   {vehicle.capacity}
