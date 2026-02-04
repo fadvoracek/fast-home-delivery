@@ -2,6 +2,7 @@ import dodavka from "@/assets/dodavka-new.jpg";
 import pickup from "@/assets/pickup-new.jpg";
 import plachta from "@/assets/plachta-new.jpg";
 import soloHydraulic from "@/assets/solo-hydraulic.jpg";
+import kamion12t from "@/assets/kamion-12t.jpg";
 import navesovaSouprava from "@/assets/navesova-souprava.jpg";
 
 const vehicles = [
@@ -32,6 +33,13 @@ const vehicles = [
     capacity: "do 6 000 kg",
     description: "Pro těžší zásilky s možností snadného nakládání pomocí hydraulického čela.",
     dimensions: "Ložný prostor: 40 m³",
+  },
+  {
+    image: kamion12t,
+    title: "12t kamion s hydraulickým čelem",
+    capacity: "do 12 000 kg",
+    description: "Pro střední a těžké zásilky s hydraulickým čelem pro snadné nakládání.",
+    dimensions: "Ložný prostor: 55 m³",
   },
   {
     image: navesovaSouprava,
