@@ -42,6 +42,8 @@ const vehicles = [
     capacity: "do 6 000 kg",
     description: "Pro těžší zásilky s možností snadného nakládání pomocí hydraulického čela.",
     dimensions: "Ložný prostor: 40 m³",
+    // Smaller scale and centered positioning
+    transformClassName: "scale-90 translate-x-4",
   },
   {
     image: navesovaSouprava,
