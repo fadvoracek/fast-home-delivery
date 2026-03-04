@@ -1,4 +1,4 @@
-import { Package, Truck, Sofa, Wrench, Box, Pill } from "lucide-react";
+import { Package, Truck, Sofa, Wrench, Box, Pill, Container, Move, Weight } from "lucide-react";
 import deliveryTeam from "@/assets/delivery-team.jpg";
 import installation from "@/assets/installation.jpg";
 
