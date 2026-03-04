@@ -32,7 +32,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-lg sm:text-xl text-card/80 mb-8 leading-relaxed animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            Jsme česká dopravní společnost s více než 40 vozidly. Specializujeme se na přepravu elektroniky, nábytku a profesionální montáže spotřebičů a kuchyní.
+            Jsme česká dopravní společnost s více než 60 vozidly. Specializujeme se na přepravu elektroniky, nábytku a profesionální montáže spotřebičů a kuchyní.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-up" style={{ animationDelay: "0.3s" }}>
@@ -54,7 +54,7 @@ const Hero = () => {
                 <Truck className="w-6 h-6 text-secondary" />
               </div>
               <div>
-                <span className="text-2xl font-bold text-card">40+</span>
+                <span className="text-2xl font-bold text-card">60+</span>
                 <p className="text-card/70 text-sm">vozidel</p>
               </div>
             </div>
@@ -72,7 +72,7 @@ const Hero = () => {
                 <Wrench className="w-6 h-6 text-secondary" />
               </div>
               <div>
-                <span className="text-2xl font-bold text-card">99%</span>
+                <span className="text-2xl font-bold text-card">100%</span>
                 <p className="text-card/70 text-sm">spokojenost</p>
               </div>
             </div>

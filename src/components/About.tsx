@@ -2,7 +2,7 @@ import { Check, Award, Users, MapPin } from "lucide-react";
 import courier from "@/assets/courier-1.jpg";
 
 const features = [
-  "Více než 40 dodávkových vozidel v provozu",
+  "Více než 60 dodávkových vozidel v provozu",
   "Zkušený tým kurýrů a montérů",
   "Pokrytí celé České republiky",
   "Expresní doručení tentýž den",
@@ -54,7 +54,7 @@ const About = () => {
             <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
               Jsme česká dopravní a logistická společnost, která se specializuje na přepravu zásilek, 
               velké elektroniky a nábytku. Naším hlavním aktivem je moderní vozový park čítající 
-              více než 40 dodávkových vozidel značek Fiat Ducato, Toyota Proace a Renault Master.
+              více než 60 dodávkových vozidel značek Fiat Ducato, Toyota Proace a Renault Master.
             </p>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
               Kromě dopravy nabízíme také profesionální montážní služby - od instalace 
@@ -76,7 +76,7 @@ const About = () => {
             <div className="flex flex-wrap gap-6 pt-6 border-t border-border">
               <div className="flex items-center gap-3">
                 <Users className="w-5 h-5 text-primary" />
-                <span className="text-muted-foreground">Tým 50+ profesionálů</span>
+                <span className="text-muted-foreground">Tým 80+ profesionálů</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5 text-primary" />
