@@ -43,7 +43,7 @@
     /* Custom tokens */
     --gradient-primary: linear-gradient(135deg, hsl(0 0% 20%), hsl(0 0% 30%));
     --gradient-accent: linear-gradient(135deg, hsl(25 95% 55%), hsl(35 95% 60%));
-    --gradient-hero: linear-gradient(180deg, hsl(0 0% 15% / 0.95), hsl(0 0% 10% / 0.9));
+    --gradient-hero: linear-gradient(180deg, hsl(0 0% 15% / 0.6), hsl(0 0% 10% / 0.5));
     --shadow-soft: 0 4px 20px -4px hsl(0 0% 20% / 0.15);
     --shadow-accent: 0 4px 20px -4px hsl(25 95% 55% / 0.3);
     
