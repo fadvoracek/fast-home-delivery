@@ -16,8 +16,8 @@ const clients = [
 
 const Clients = () => {
   return (
-    <section className="pt-12 pb-8 bg-background">
-      <div className="container-wide px-4 sm:px-6 lg:px-8">
+    <section className="section-padding bg-background">
+      <div className="container-wide">
         <div className="text-center mb-4">
           <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-4">
             Důvěřují nám
