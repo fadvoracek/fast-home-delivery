@@ -104,35 +104,35 @@ const Career = () => {
           {positions.map((position) => (
             <div
               key={position.title}
-              className="bg-card rounded-xl sm:rounded-2xl p-3 sm:p-5 border border-border hover:border-primary/30 transition-all duration-300 hover:shadow-soft flex flex-col"
+              className="bg-card rounded-xl sm:rounded-2xl p-4 sm:p-5 border border-border hover:border-primary/30 transition-all duration-300 hover:shadow-soft flex flex-col"
             >
               <div className="mb-2 sm:mb-3">
                 <div className="flex items-start justify-between gap-2 mb-1.5">
-                  <h3 className="text-sm sm:text-base font-bold text-foreground leading-tight">
+                  <h3 className="text-base sm:text-lg font-bold text-foreground leading-tight">
                     {position.title}
                   </h3>
                 </div>
-                <div className="bg-secondary/10 text-secondary font-bold px-2 py-1 rounded-lg text-xs sm:text-sm inline-block mb-2">
+                <div className="bg-secondary/10 text-secondary font-bold px-2 py-1 rounded-lg text-sm inline-block mb-2">
                   {position.salary}
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  <span className="inline-flex items-center gap-1 text-xs text-muted-foreground">
+                  <span className="inline-flex items-center gap-1 text-xs sm:text-sm text-muted-foreground">
                     📍 {position.location}
                   </span>
-                  <span className="inline-flex items-center gap-1 text-xs text-muted-foreground">
+                  <span className="inline-flex items-center gap-1 text-xs sm:text-sm text-muted-foreground">
                     💼 {position.type}
                   </span>
                 </div>
               </div>
 
-              <p className="text-muted-foreground text-xs mb-2 sm:mb-3 hidden sm:block">{position.description}</p>
+              <p className="text-muted-foreground text-sm mb-2 sm:mb-3 hidden sm:block">{position.description}</p>
 
               <div className="mb-3 flex-1">
-                <h4 className="font-semibold text-foreground mb-1.5 text-xs sm:text-sm">Požadujeme:</h4>
+                <h4 className="font-semibold text-foreground mb-1.5 text-sm">Požadujeme:</h4>
                 <ul className="space-y-1">
                   {position.requirements.map((req) => (
-                    <li key={req} className="flex items-center gap-1.5 text-xs text-muted-foreground">
-                      <span className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-secondary rounded-full flex-shrink-0" />
+                    <li key={req} className="flex items-center gap-1.5 text-xs sm:text-sm text-muted-foreground">
+                      <span className="w-1.5 h-1.5 bg-secondary rounded-full flex-shrink-0" />
                       {req}
                     </li>
                   ))}
