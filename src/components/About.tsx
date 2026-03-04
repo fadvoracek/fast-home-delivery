@@ -33,7 +33,7 @@ const About = () => {
                   <Award className="w-6 h-6 text-accent-foreground" />
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-foreground">10+ let</div>
+                  <div className="text-2xl font-bold text-foreground">8 let</div>
                   <div className="text-muted-foreground text-sm">na trhu</div>
                 </div>
               </div>
