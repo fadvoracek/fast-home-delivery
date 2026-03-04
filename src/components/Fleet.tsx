@@ -75,11 +75,11 @@ const Fleet = () => {
                 index === 2 ? "lg:col-span-1 sm:col-span-2 lg:row-span-1" : ""
               }`}
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-48 overflow-hidden flex items-center justify-center bg-white">
                 <img
                   src={vehicle.image}
                   alt={vehicle.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="max-h-36 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute top-4 right-4 bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-sm font-semibold">
                   {vehicle.capacity}
