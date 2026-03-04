@@ -147,33 +147,33 @@ const Career = () => {
           ))}
         </div>
 
-        {/* CTA card - full width */}
-        <div className="grid md:grid-cols-2 gap-3 sm:gap-4 items-stretch">
-          <div className="bg-gradient-primary rounded-xl sm:rounded-2xl p-4 sm:p-6 flex flex-col justify-center">
-            <h3 className="text-lg sm:text-xl font-bold text-primary-foreground mb-2">
+        {/* CTA card */}
+        <div className="grid md:grid-cols-2 gap-3 sm:gap-4 items-start max-w-3xl">
+          <div className="bg-gradient-primary rounded-xl p-4 flex flex-col justify-center">
+            <h3 className="text-base font-bold text-primary-foreground mb-1">
               Chceš se přidat?
             </h3>
-            <p className="text-primary-foreground/80 text-sm mb-3 sm:mb-4">
-              Pošli nám životopis nebo zavolej pro nezávazné setkání
+            <p className="text-primary-foreground/80 text-xs mb-3">
+              Pošli nám životopis nebo zavolej
             </p>
-            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
-              <Button variant="heroOutline" size="sm" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+            <div className="flex flex-col sm:flex-row gap-2">
+              <Button variant="heroOutline" size="sm" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-xs h-8">
                 📧 info@fa-dvoracek.cz
               </Button>
-              <Button variant="heroOutline" size="sm" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+              <Button variant="heroOutline" size="sm" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-xs h-8">
                 📞 +420 732 345 136
               </Button>
             </div>
           </div>
 
-          <div className="relative rounded-xl sm:rounded-2xl overflow-hidden hidden md:block">
+          <div className="relative rounded-xl overflow-hidden hidden md:block h-36">
             <img
               src={careerTeam}
               alt="Kurýr předává zásilku zákazníkovi"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent flex items-end p-6">
-              <p className="text-card font-medium">
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent flex items-end p-4">
+              <p className="text-card font-medium text-sm">
                 FA Dvořáček s.r.o. – dodáváme kvalitu, hledáme profesionály!
               </p>
             </div>
