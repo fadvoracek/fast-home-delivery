@@ -56,7 +56,7 @@ const positions = [
     title: "Řidič nákladního vozidla",
     location: "Praha a ČR",
     type: "HPP / IČO",
-    salary: "Až 80 000 Kč/měsíc",
+    salary: "Až 60 000 Kč/měsíc",
     description: "Přeprava nákladů kamionovou nebo návěsovou soupravou po České republice i v rámci mezinárodní přepravy. Zajištění nakládky a vykládky zboží.",
     requirements: [
       "Řidičský průkaz C+E",
