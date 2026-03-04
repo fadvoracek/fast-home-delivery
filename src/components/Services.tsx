@@ -1,4 +1,4 @@
-import { Package, Truck, Sofa, Wrench, Box, Pill, Scaling, Archive } from "lucide-react";
+import { Package, Truck, Wrench, Box, Scaling, Container } from "lucide-react";
 import deliveryTeam from "@/assets/delivery-team.jpg";
 import installation from "@/assets/installation.jpg";
 
@@ -10,28 +10,18 @@ const services = [
   },
   {
     icon: Truck,
-    title: "Přeprava elektroniky",
-    description: "Specializujeme se na přepravu velké elektroniky - lednice, pračky, televize. Šetrná manipulace a profesionální zacházení.",
-  },
-  {
-    icon: Sofa,
-    title: "Přeprava nábytku",
-    description: "Bezpečná přeprava nábytku jakýchkoli rozměrů. Od drobného nábytku po kompletní vybavení domácnosti.",
+    title: "Přeprava elektroniky a nábytku",
+    description: "Specializujeme se na přepravu velké elektroniky i nábytku - lednice, pračky, televize, skříně či sedací soupravy. Šetrná manipulace a profesionální zacházení s každou zásilkou.",
   },
   {
     icon: Wrench,
-    title: "Montáže spotřebičů",
-    description: "Profesionální instalace a montáž domácích spotřebičů. Naši technici mají letité zkušenosti s vestavnými spotřebiči.",
+    title: "Montáže spotřebičů a nábytku",
+    description: "Profesionální instalace a montáž domácích spotřebičů i nábytku. Od vestavných spotřebičů přes kuchyňské linky až po sestavení nábytku na míru.",
   },
   {
     icon: Box,
     title: "Zásobování výdejních boxů",
     description: "Spolehlivé zásobování Alzaboxů a dalších výdejních míst. Pravidelné trasy s pevným rozvrhem a 100% spolehlivostí doručení.",
-  },
-  {
-    icon: Pill,
-    title: "Přeprava léčiv",
-    description: "Specializovaná přeprava farmaceutických produktů a léčiv s dodržením teplotního režimu. Spolehlivé doručení s trasováním zásilek v reálném čase.",
   },
   {
     icon: Truck,
@@ -44,7 +34,7 @@ const services = [
     description: "Přeprava nadrozměrných a těžkých nákladů vyžadujících speciální manipulaci. Zajistíme povolení, doprovod i bezpečnou přepravu na místo určení.",
   },
   {
-    icon: Archive,
+    icon: Container,
     title: "Kontejnerová doprava",
     description: "Přeprava námořních i vnitrozemských kontejnerů na návěsových soupravách. Svoz a rozvoz kontejnerů z terminálů po celé Evropě.",
   },
