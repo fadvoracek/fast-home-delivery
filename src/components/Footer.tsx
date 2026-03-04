@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -8,13 +9,11 @@ const Footer = () => {
           {/* Company */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-accent rounded-xl flex items-center justify-center">
-                <span className="text-accent-foreground font-bold">FA</span>
-              </div>
-              <div>
-                <span className="font-bold text-background">FA Dvořáček</span>
-                <span className="text-background/60 text-sm block">s.r.o.</span>
-              </div>
+              <img
+                src={logo}
+                alt="FA Dvořáček logo"
+                className="h-10 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-background/70 text-sm leading-relaxed">
               Česká dopravní a logistická společnost s více než 40 vozidly. 
