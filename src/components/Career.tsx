@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Banknote, Car, Clock, Users, ArrowRight } from "lucide-react";
-import deliveryCustomer from "@/assets/delivery-customer.jpg";
+import careerTeam from "@/assets/career-team.png";
 
 const benefits = [
   {
@@ -89,13 +89,13 @@ const Career = () => {
 
             <div className="relative rounded-2xl overflow-hidden">
               <img
-                src={deliveryCustomer}
+                src={careerTeam}
                 alt="Kurýr předává zásilku zákazníkovi"
                 className="w-full h-64 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent flex items-end p-6">
                 <p className="text-card font-medium">
-                  💙 FA Dvořáček s.r.o. – dodáváme kvalitu, hledáme profesionály!
+                  FA Dvořáček s.r.o. – dodáváme kvalitu, hledáme profesionály!
                 </p>
               </div>
             </div>
@@ -160,7 +160,7 @@ const Career = () => {
                   📧 info@fa-dvoracek.cz
                 </Button>
                 <Button variant="heroOutline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
-                  📞 +420 603 000 000
+                  📞 +420 732 345 136
                 </Button>
               </div>
             </div>
