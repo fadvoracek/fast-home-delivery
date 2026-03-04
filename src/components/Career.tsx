@@ -89,7 +89,7 @@ const Career = () => {
 
             <div className="relative rounded-2xl overflow-hidden">
               <img
-                src={deliveryCustomer}
+                src={careerTeam}
                 alt="Kurýr předává zásilku zákazníkovi"
                 className="w-full h-64 object-cover"
               />
