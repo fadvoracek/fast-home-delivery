@@ -39,60 +39,60 @@ const Services = () => {
   return (
     <section id="sluzby" className="section-padding bg-background">
       <div className="container-wide">
-        <div className="text-center mb-16">
-          <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-4">
+        <div className="text-center mb-8 sm:mb-16">
+          <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-2 sm:mb-4">
             Co nabízíme
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-3 sm:mb-6">
             Kompletní logistické služby
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-sm sm:text-lg max-w-2xl mx-auto">
             Od expresní přepravy zásilek až po profesionální montáže. 
             Postaráme se o vaše zboží od A do Z.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 mb-8 sm:mb-16">
           {services.map((service, index) => (
             <div
               key={service.title}
-              className="group bg-card rounded-2xl p-6 border border-border hover:border-primary/30 transition-all duration-300 hover:shadow-soft hover:-translate-y-1"
+              className="group bg-card rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-border hover:border-primary/30 transition-all duration-300 hover:shadow-soft hover:-translate-y-1"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-gradient-primary transition-all duration-300">
-                <service.icon className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors" />
+              <div className="w-10 h-10 sm:w-14 sm:h-14 bg-primary/10 rounded-lg sm:rounded-xl flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-gradient-primary transition-all duration-300">
+                <service.icon className="w-5 h-5 sm:w-7 sm:h-7 text-primary group-hover:text-primary-foreground transition-colors" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">{service.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+              <h3 className="text-sm sm:text-xl font-bold text-foreground mb-1 sm:mb-3">{service.title}</h3>
+              <p className="text-muted-foreground text-xs sm:text-base leading-relaxed hidden sm:block">{service.description}</p>
             </div>
           ))}
         </div>
 
         {/* Featured images */}
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="relative group overflow-hidden rounded-2xl">
+        <div className="grid grid-cols-2 gap-3 sm:gap-8">
+          <div className="relative group overflow-hidden rounded-xl sm:rounded-2xl">
             <img
               src={deliveryTeam}
               alt="Tým kurýrů při vykládce elektroniky"
-              className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105"
+              className="w-full h-40 sm:h-80 object-cover transition-transform duration-500 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-6">
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-3 sm:p-6">
               <div>
-                <h3 className="text-card text-xl font-bold mb-2">Profesionální tým</h3>
-                <p className="text-card/80">Zkušení kurýři a montéři připraveni splnit vaše požadavky</p>
+                <h3 className="text-card text-sm sm:text-xl font-bold mb-1 sm:mb-2">Profesionální tým</h3>
+                <p className="text-card/80 text-xs sm:text-base hidden sm:block">Zkušení kurýři a montéři připraveni splnit vaše požadavky</p>
               </div>
             </div>
           </div>
-          <div className="relative group overflow-hidden rounded-2xl">
+          <div className="relative group overflow-hidden rounded-xl sm:rounded-2xl">
             <img
               src={installation}
               alt="Montáž vestavných spotřebičů"
-              className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105"
+              className="w-full h-40 sm:h-80 object-cover transition-transform duration-500 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-6">
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-3 sm:p-6">
               <div>
-                <h3 className="text-card text-xl font-bold mb-2">Montážní služby</h3>
-                <p className="text-card/80">Instalace spotřebičů a kuchyní na klíč</p>
+                <h3 className="text-card text-sm sm:text-xl font-bold mb-1 sm:mb-2">Montážní služby</h3>
+                <p className="text-card/80 text-xs sm:text-base hidden sm:block">Instalace spotřebičů a kuchyní na klíč</p>
               </div>
             </div>
           </div>
