@@ -1,24 +1,24 @@
-import dodavka from "@/assets/dodavka-new.jpg";
-import pickup from "@/assets/pickup-new.jpg";
-import plachta from "@/assets/plachta-new.jpg";
-import soloHydraulic from "@/assets/solo-hydraulic.jpg";
-import kamion12t from "@/assets/kamion-12t.jpg";
-import navesovaSouprava from "@/assets/navesova-souprava.jpg";
+import malaDodavka from "@/assets/mala-dodavka.png";
+import furgon from "@/assets/furgon.png";
+import plachta from "@/assets/plachta-vozidlo.png";
+import solo from "@/assets/solo.png";
+import ruka from "@/assets/ruka.png";
+import tahac from "@/assets/tahac.png";
 
 const vehicles = [
   {
-    image: pickup,
-    title: "Pickup / malá dodávka",
+    image: malaDodavka,
+    title: "Malá dodávka",
     capacity: "do 1 000 kg",
-    description: "Pro střední zásilky a flexibilní městskou dopravu.",
+    description: "Kompaktní a rychlá. Ideální pro městské rozvozy a menší zásilky.",
     dimensions: "Ložný prostor: 4 m³",
   },
   {
-    image: dodavka,
+    image: furgon,
     title: "Dodávka furgon",
     capacity: "do 1 500 kg",
-    description: "Naše nejčastější vozidlo. Fiat Ducato, Toyota Proace, Renault Master.",
-    dimensions: "Ložný prostor: 13-17 m³",
+    description: "Naše nejčastější vozidlo. Uzavřený nákladový prostor pro bezpečnou přepravu.",
+    dimensions: "Ložný prostor: 13–17 m³",
   },
   {
     image: plachta,
@@ -28,22 +28,22 @@ const vehicles = [
     dimensions: "Ložný prostor: 20 m³",
   },
   {
-    image: soloHydraulic,
+    image: solo,
     title: "Sólo s hydraulickým čelem",
     capacity: "do 6 000 kg",
     description: "Pro těžší zásilky s možností snadného nakládání pomocí hydraulického čela.",
     dimensions: "Ložný prostor: 40 m³",
   },
   {
-    image: kamion12t,
-    title: "12t kamion s hydraulickým čelem",
+    image: ruka,
+    title: "Kamion s hydraulickou rukou",
     capacity: "do 12 000 kg",
-    description: "Pro střední a těžké zásilky s hydraulickým čelem pro snadné nakládání.",
-    dimensions: "Ložný prostor: 55 m³",
+    description: "Vybavený hydraulickou rukou pro manipulaci s těžkými a rozměrnými náklady bez potřeby jeřábu.",
+    dimensions: "Ložná plocha: 6,2 × 2,4 m",
   },
   {
-    image: navesovaSouprava,
-    title: "Návěsová souprava",
+    image: tahac,
+    title: "Tahač s návěsem",
     capacity: "do 24 000 kg",
     description: "Pro velkoobjemové přepravy a paletové zásilky po celé Evropě.",
     dimensions: "Ložný prostor: 90 m³",
