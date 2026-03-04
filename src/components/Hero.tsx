@@ -54,7 +54,7 @@ const Hero = () => {
                 <Truck className="w-6 h-6 text-secondary" />
               </div>
               <div>
-                <span className="text-2xl font-bold text-card">40+</span>
+                <span className="text-2xl font-bold text-card">60+</span>
                 <p className="text-card/70 text-sm">vozidel</p>
               </div>
             </div>
