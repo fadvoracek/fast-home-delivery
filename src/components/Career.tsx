@@ -27,11 +27,11 @@ const benefits = [
 
 const positions = [
   {
-    title: "Řidič - rozvoz Alzaboxů",
+    title: "Řidič - rozvoz zásilek",
     location: "Praha",
     type: "IČO / Brigáda",
-    salary: "2700-3000 Kč/den",
-    description: "Denně odjedeš 3 kola bez kontaktu se zákazníky – pouze doručování do Alzaboxů. Cca 20 zastávek za kolo, každý den na stejné trase.",
+    salary: "1900-2500 Kč/den",
+    description: "Rozvoz zásilek po Praze a okolí dodávkovým vozidlem. Práce na pravidelných trasách s každodenním plánováním rozvozu.",
     requirements: [
       "Řidičský průkaz sk. B",
       "Zkušenost s dodávkou",
@@ -49,6 +49,19 @@ const positions = [
       "Řidičský průkaz sk. B",
       "Zkušenost s instalací výhodou",
       "Manuální zručnost",
+      "Komunikativnost",
+    ],
+  },
+  {
+    title: "Řidič nákladního vozidla",
+    location: "Praha a ČR",
+    type: "HPP / IČO",
+    salary: "Až 80 000 Kč/měsíc",
+    description: "Přeprava nákladů kamionovou nebo návěsovou soupravou po České republice i v rámci mezinárodní přepravy. Zajištění nakládky a vykládky zboží.",
+    requirements: [
+      "Řidičský průkaz C+E",
+      "Profesní způsobilost řidiče",
+      "Zkušenosti s řízením nákladního vozidla",
       "Komunikativnost",
     ],
   },
