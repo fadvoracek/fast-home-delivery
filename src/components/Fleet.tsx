@@ -79,7 +79,7 @@ const Fleet = () => {
                 <img
                   src={vehicle.image}
                   alt={vehicle.title}
-                  className="max-h-36 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+                  className="max-h-44 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute top-4 right-4 bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-sm font-semibold">
                   {vehicle.capacity}
