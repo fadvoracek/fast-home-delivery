@@ -29,7 +29,7 @@ const services = [
     description: "Nákladní kamionová přeprava vozidly nad 3,5 tuny po celé ČR i Evropě. Spolehlivé a termínované dodávky velkoobjemových zásilek.",
   },
   {
-    icon: Scaling,
+    icon: Container,
     title: "Nadrozměrná a kontejnerová doprava",
     description: "Přeprava nadrozměrných nákladů i námořních a vnitrozemských kontejnerů. Zajistíme speciální manipulaci, povolení, doprovod a svoz z terminálů po celé Evropě.",
   },
