@@ -72,7 +72,7 @@ const Hero = () => {
                 <Wrench className="w-6 h-6 text-secondary" />
               </div>
               <div>
-                <span className="text-2xl font-bold text-card">99%</span>
+                <span className="text-2xl font-bold text-card">100%</span>
                 <p className="text-card/70 text-sm">spokojenost</p>
               </div>
             </div>

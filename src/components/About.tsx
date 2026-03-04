@@ -76,7 +76,7 @@ const About = () => {
             <div className="flex flex-wrap gap-6 pt-6 border-t border-border">
               <div className="flex items-center gap-3">
                 <Users className="w-5 h-5 text-primary" />
-                <span className="text-muted-foreground">Tým 50+ profesionálů</span>
+                <span className="text-muted-foreground">Tým 80+ profesionálů</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5 text-primary" />
