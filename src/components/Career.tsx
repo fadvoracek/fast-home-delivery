@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Banknote, Car, Clock, Users, ArrowRight } from "lucide-react";
-import careerTeam from "@/assets/career-team.png";
+import careerCourier from "@/assets/career-courier.png";
 
 const benefits = [
   {
@@ -148,7 +148,7 @@ const Career = () => {
         </div>
 
         {/* CTA card */}
-        <div className="grid md:grid-cols-2 gap-3 sm:gap-4 items-stretch h-40 sm:h-44">
+        <div className="grid md:grid-cols-2 gap-3 sm:gap-4 items-stretch h-48 sm:h-52">
           <div className="bg-gradient-primary rounded-xl sm:rounded-2xl p-4 sm:p-5 flex flex-col justify-center">
             <h3 className="text-base sm:text-lg font-bold text-primary-foreground mb-1.5">
               Chceš se přidat?
@@ -168,7 +168,7 @@ const Career = () => {
 
           <div className="relative rounded-xl sm:rounded-2xl overflow-hidden hidden md:block">
             <img
-              src={careerTeam}
+              src={careerCourier}
               alt="Kurýr předává zásilku zákazníkovi"
               className="w-full h-full object-cover"
             />
