@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Banknote, Car, Clock, Users, ArrowRight } from "lucide-react";
-import careerTeam from "@/assets/career-team.png";
+import careerCourier from "@/assets/career-courier.png";
 
 const benefits = [
   {
