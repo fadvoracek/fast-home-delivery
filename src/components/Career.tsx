@@ -95,7 +95,7 @@ const Career = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent flex items-end p-6">
                 <p className="text-card font-medium">
-                  💙 FA Dvořáček s.r.o. – dodáváme kvalitu, hledáme profesionály!
+                  FA Dvořáček s.r.o. – dodáváme kvalitu, hledáme profesionály!
                 </p>
               </div>
             </div>
