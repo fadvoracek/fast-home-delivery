@@ -54,7 +54,7 @@ const About = () => {
             <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
               Jsme česká dopravní a logistická společnost, která se specializuje na přepravu zásilek, 
               velké elektroniky a nábytku. Naším hlavním aktivem je moderní vozový park čítající 
-              více než 40 dodávkových vozidel značek Fiat Ducato, Toyota Proace a Renault Master.
+              více než 60 dodávkových vozidel značek Fiat Ducato, Toyota Proace a Renault Master.
             </p>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
               Kromě dopravy nabízíme také profesionální montážní služby - od instalace 
