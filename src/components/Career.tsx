@@ -160,7 +160,7 @@ const Career = () => {
                   📧 info@fa-dvoracek.cz
                 </Button>
                 <Button variant="heroOutline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
-                  📞 +420 603 000 000
+                  📞 +420 732 345 136
                 </Button>
               </div>
             </div>
