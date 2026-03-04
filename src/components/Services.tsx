@@ -1,4 +1,4 @@
-import { Package, Truck, Sofa, Wrench, Box, Pill } from "lucide-react";
+import { Package, Truck, Sofa, Wrench, Box, Pill, Scaling, Archive } from "lucide-react";
 import deliveryTeam from "@/assets/delivery-team.jpg";
 import installation from "@/assets/installation.jpg";
 
@@ -32,6 +32,21 @@ const services = [
     icon: Pill,
     title: "Přeprava léčiv",
     description: "Specializovaná přeprava farmaceutických produktů a léčiv s dodržením teplotního režimu. Spolehlivé doručení s trasováním zásilek v reálném čase.",
+  },
+  {
+    icon: Truck,
+    title: "Kamionová doprava",
+    description: "Nákladní kamionová přeprava vozidly nad 3,5 tuny po celé ČR i Evropě. Spolehlivé a termínované dodávky velkoobjemových zásilek.",
+  },
+  {
+    icon: Scaling,
+    title: "Nadrozměrná doprava",
+    description: "Přeprava nadrozměrných a těžkých nákladů vyžadujících speciální manipulaci. Zajistíme povolení, doprovod i bezpečnou přepravu na místo určení.",
+  },
+  {
+    icon: Archive,
+    title: "Kontejnerová doprava",
+    description: "Přeprava námořních i vnitrozemských kontejnerů na návěsových soupravách. Svoz a rozvoz kontejnerů z terminálů po celé Evropě.",
   },
 ];
 
