@@ -54,42 +54,40 @@ const Fleet = () => {
   return (
     <section id="vozidla" className="section-padding pt-4 bg-muted">
       <div className="container-wide">
-        <div className="text-center mb-16">
-          <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-4">
+        <div className="text-center mb-8 sm:mb-16">
+          <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-2 sm:mb-4">
             Vozový park
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-3 sm:mb-6">
             Více než 60 vozidel
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-sm sm:text-lg max-w-2xl mx-auto">
             Disponujeme moderním vozovým parkem pro jakýkoli typ přepravy. 
             Od malých zásilek až po kamionovou dopravu.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {vehicles.map((vehicle, index) => (
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
+          {vehicles.map((vehicle) => (
             <div
               key={vehicle.title}
-              className={`group bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/30 transition-all duration-300 hover:shadow-soft ${
-                index === 2 ? "lg:col-span-1 sm:col-span-2 lg:row-span-1" : ""
-              }`}
+              className="group bg-card rounded-xl sm:rounded-2xl overflow-hidden border border-border hover:border-primary/30 transition-all duration-300 hover:shadow-soft"
             >
-              <div className="relative h-52 overflow-hidden flex items-center justify-center bg-white">
+              <div className="relative h-28 sm:h-52 overflow-hidden flex items-center justify-center bg-white">
                 <img
                   src={vehicle.image}
                   alt={vehicle.title}
-                  className="max-h-48 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+                  className="max-h-24 sm:max-h-48 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute top-4 right-4 bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-sm font-semibold">
+                <div className="absolute top-2 right-2 sm:top-4 sm:right-4 bg-secondary text-secondary-foreground px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-sm font-semibold">
                   {vehicle.capacity}
                 </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-foreground mb-2">{vehicle.title}</h3>
-                <p className="text-muted-foreground mb-3">{vehicle.description}</p>
-                <div className="flex items-center gap-2 text-sm text-primary font-medium">
-                  <span className="w-1.5 h-1.5 bg-primary rounded-full" />
+              <div className="p-3 sm:p-6">
+                <h3 className="text-sm sm:text-xl font-bold text-foreground mb-1 sm:mb-2">{vehicle.title}</h3>
+                <p className="text-muted-foreground text-xs sm:text-base mb-2 sm:mb-3 hidden sm:block">{vehicle.description}</p>
+                <div className="flex items-center gap-1 sm:gap-2 text-[10px] sm:text-sm text-primary font-medium">
+                  <span className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-primary rounded-full" />
                   {vehicle.dimensions}
                 </div>
               </div>
@@ -98,7 +96,7 @@ const Fleet = () => {
         </div>
 
         {/* Stats bar */}
-        <div className="mt-16 bg-gradient-primary rounded-2xl p-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="mt-8 sm:mt-16 bg-gradient-primary rounded-xl sm:rounded-2xl p-4 sm:p-8 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
           {[
             { value: "60+", label: "Dodávkových vozidel" },
             { value: "3+", label: "Kamionů" },
@@ -106,8 +104,8 @@ const Fleet = () => {
             { value: "24/7", label: "Dispečink" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
-              <div className="text-4xl font-bold text-primary-foreground mb-2">{stat.value}</div>
-              <div className="text-primary-foreground/80">{stat.label}</div>
+              <div className="text-2xl sm:text-4xl font-bold text-primary-foreground mb-1 sm:mb-2">{stat.value}</div>
+              <div className="text-primary-foreground/80 text-xs sm:text-base">{stat.label}</div>
             </div>
           ))}
         </div>

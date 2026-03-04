@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-courier.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden overflow-x-hidden">
+    <section className="relative min-h-[85vh] sm:min-h-screen flex items-center pt-24 sm:pt-32 pb-12 sm:pb-20 overflow-hidden overflow-x-hidden">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -20,22 +20,22 @@ const Hero = () => {
 
       <div className="container-wide px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 bg-card/10 backdrop-blur-sm border border-card/20 rounded-full px-4 py-2 mb-6 animate-fade-up">
+          <div className="inline-flex items-center gap-2 bg-card/10 backdrop-blur-sm border border-card/20 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 mb-4 sm:mb-6 animate-fade-up">
             <span className="w-2 h-2 bg-secondary rounded-full animate-pulse-soft" />
-            <span className="text-card/90 text-sm font-medium">Váš spolehlivý dopravní partner</span>
+            <span className="text-card/90 text-xs sm:text-sm font-medium">Váš spolehlivý dopravní partner</span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-card leading-tight mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-card leading-tight mb-4 sm:mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
             Doprava zásilek a{" "}
             <span className="text-secondary">montáže</span>{" "}
             po celé ČR
           </h1>
 
-          <p className="text-lg sm:text-xl text-card/80 mb-8 leading-relaxed animate-fade-up" style={{ animationDelay: "0.2s" }}>
+          <p className="text-base sm:text-xl text-card/80 mb-6 sm:mb-8 leading-relaxed animate-fade-up" style={{ animationDelay: "0.2s" }}>
             Jsme česká dopravní společnost s více než 60 vozidly. Specializujeme se na přepravu elektroniky, nábytku a profesionální montáže spotřebičů a kuchyní.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-12 animate-fade-up" style={{ animationDelay: "0.3s" }}>
             <Button variant="hero" size="lg" asChild>
               <a href="#kontakt">
                 Nezávazná poptávka
@@ -48,32 +48,32 @@ const Hero = () => {
           </div>
 
           {/* Quick stats */}
-          <div className="grid grid-cols-3 gap-6 animate-fade-up" style={{ animationDelay: "0.4s" }}>
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-card/10 backdrop-blur-sm rounded-xl flex items-center justify-center">
-                <Truck className="w-6 h-6 text-secondary" />
+          <div className="grid grid-cols-3 gap-3 sm:gap-6 animate-fade-up" style={{ animationDelay: "0.4s" }}>
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="w-9 h-9 sm:w-12 sm:h-12 bg-card/10 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                <Truck className="w-4 h-4 sm:w-6 sm:h-6 text-secondary" />
               </div>
               <div>
-                <span className="text-2xl font-bold text-card">60+</span>
-                <p className="text-card/70 text-sm">vozidel</p>
+                <span className="text-lg sm:text-2xl font-bold text-card">60+</span>
+                <p className="text-card/70 text-xs sm:text-sm">vozidel</p>
               </div>
             </div>
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-card/10 backdrop-blur-sm rounded-xl flex items-center justify-center">
-                <Package className="w-6 h-6 text-secondary" />
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="w-9 h-9 sm:w-12 sm:h-12 bg-card/10 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                <Package className="w-4 h-4 sm:w-6 sm:h-6 text-secondary" />
               </div>
               <div>
-                <span className="text-2xl font-bold text-card">100 000+</span>
-                <p className="text-card/70 text-sm">zásilek/měsíc</p>
+                <span className="text-lg sm:text-2xl font-bold text-card">100 000+</span>
+                <p className="text-card/70 text-xs sm:text-sm">zásilek/měsíc</p>
               </div>
             </div>
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-card/10 backdrop-blur-sm rounded-xl flex items-center justify-center">
-                <Wrench className="w-6 h-6 text-secondary" />
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="w-9 h-9 sm:w-12 sm:h-12 bg-card/10 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                <Wrench className="w-4 h-4 sm:w-6 sm:h-6 text-secondary" />
               </div>
               <div>
-                <span className="text-2xl font-bold text-card">100%</span>
-                <p className="text-card/70 text-sm">spokojenost</p>
+                <span className="text-lg sm:text-2xl font-bold text-card">100%</span>
+                <p className="text-card/70 text-xs sm:text-sm">spokojenost</p>
               </div>
             </div>
           </div>
@@ -81,7 +81,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
+      <div className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 animate-float hidden sm:block">
         <div className="w-6 h-10 border-2 border-card/30 rounded-full flex justify-center pt-2">
           <div className="w-1.5 h-3 bg-card/50 rounded-full animate-pulse" />
         </div>
