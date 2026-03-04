@@ -168,7 +168,7 @@ const Career = () => {
 
           <div className="relative rounded-xl sm:rounded-2xl overflow-hidden hidden md:block">
             <img
-              src={careerTeam}
+              src={careerCourier}
               alt="Kurýr předává zásilku zákazníkovi"
               className="w-full h-full object-cover"
             />
