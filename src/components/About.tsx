@@ -2,7 +2,7 @@ import { Check, Award, Users, MapPin } from "lucide-react";
 import courier from "@/assets/courier-1.jpg";
 
 const features = [
-  "Více než 40 dodávkových vozidel v provozu",
+  "Více než 60 dodávkových vozidel v provozu",
   "Zkušený tým kurýrů a montérů",
   "Pokrytí celé České republiky",
   "Expresní doručení tentýž den",
