@@ -33,7 +33,13 @@ const services = [
     title: "Nadrozměrná doprava",
     description: "Přeprava nadrozměrných a těžkých nákladů vyžadujících speciální manipulaci. Zajistíme povolení, doprovod i bezpečnou přepravu na místo určení.",
   },
+  {
+    icon: Container,
+    title: "Kontejnerová doprava",
+    description: "Přeprava námořních i vnitrozemských kontejnerů na návěsových soupravách. Svoz a rozvoz kontejnerů z terminálů po celé Evropě.",
+  },
 ];
+
 const Services = () => {
   return (
     <section id="sluzby" className="section-padding bg-background">
