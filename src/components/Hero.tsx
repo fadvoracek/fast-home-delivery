@@ -31,8 +31,10 @@ const Hero = () => {
             po celé ČR a EU
           </h1>
 
-          <p className="text-base sm:text-xl text-card/80 mb-6 sm:mb-8 leading-relaxed animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            Jsme česká dopravní společnost s více než 60 vozidly. Specializujeme se na přepravu elektroniky, nábytku a profesionální montáže spotřebičů a kuchyní.
+          <p className="text-base sm:text-xl text-card/80 mb-8 sm:mb-8 leading-relaxed animate-fade-up" style={{ animationDelay: "0.2s" }}>
+            Jsme česká dopravní společnost s více než 60 vozidly.
+            <br className="sm:hidden" />{" "}
+            Specializujeme se na přepravu elektroniky, nábytku a profesionální montáže spotřebičů a kuchyní.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-12 animate-fade-up" style={{ animationDelay: "0.3s" }}>
