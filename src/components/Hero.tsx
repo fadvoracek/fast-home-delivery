@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-courier.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen sm:min-h-screen flex items-center pt-28 sm:pt-32 pb-16 sm:pb-20 overflow-hidden overflow-x-hidden">
+    <section className="relative min-h-screen sm:min-h-screen flex items-stretch pt-24 sm:pt-32 pb-16 sm:pb-20 overflow-hidden overflow-x-hidden">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
