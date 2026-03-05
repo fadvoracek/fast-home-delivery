@@ -9,7 +9,7 @@ const Hero = () => {
   const satisfaction = useCountUp(100, 1500);
 
   return (
-    <section className="relative min-h-screen sm:min-h-screen flex items-stretch pt-32 sm:pt-32 pb-16 sm:pb-20 overflow-hidden overflow-x-hidden">
+    <section className="relative min-h-screen flex items-stretch sm:items-center pt-32 sm:pt-32 pb-16 sm:pb-20 overflow-hidden overflow-x-hidden">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
