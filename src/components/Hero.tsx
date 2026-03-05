@@ -1,8 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Truck, Package, Wrench } from "lucide-react";
+import { useCountUp } from "@/hooks/use-count-up";
 import heroImage from "@/assets/hero-courier.jpg";
 
 const Hero = () => {
+  const vehicles = useCountUp(80, 1800);
+  const shipments = useCountUp(100000, 2200);
+  const satisfaction = useCountUp(100, 1500);
+
   return (
     <section className="relative min-h-screen sm:min-h-screen flex items-stretch pt-32 sm:pt-32 pb-16 sm:pb-20 overflow-hidden overflow-x-hidden">
       {/* Background image */}
@@ -59,7 +64,7 @@ const Hero = () => {
                 <Truck className="w-4 h-4 sm:w-6 sm:h-6 text-secondary" />
               </div>
               <div>
-                <span className="text-lg sm:text-2xl font-bold text-card">80</span>
+                <span ref={vehicles.ref as React.RefObject<HTMLSpanElement>} className="text-lg sm:text-2xl font-bold text-card">{vehicles.count}+</span>
                 <p className="text-card/70 text-xs sm:text-sm">vozidel</p>
               </div>
             </div>
@@ -68,7 +73,7 @@ const Hero = () => {
                 <Package className="w-4 h-4 sm:w-6 sm:h-6 text-secondary" />
               </div>
               <div>
-                <span className="text-base sm:text-2xl font-bold text-card">100 000+</span>
+                <span ref={shipments.ref as React.RefObject<HTMLSpanElement>} className="text-base sm:text-2xl font-bold text-card">{shipments.count.toLocaleString("cs-CZ")}+</span>
                 <p className="text-card/70 text-xs sm:text-sm">zásilek/měsíc</p>
               </div>
             </div>
@@ -77,7 +82,7 @@ const Hero = () => {
                 <Wrench className="w-4 h-4 sm:w-6 sm:h-6 text-secondary" />
               </div>
               <div>
-                <span className="text-lg sm:text-2xl font-bold text-card">100%</span>
+                <span ref={satisfaction.ref as React.RefObject<HTMLSpanElement>} className="text-lg sm:text-2xl font-bold text-card">{satisfaction.count}%</span>
                 <p className="text-card/70 text-xs sm:text-sm">spokojenost</p>
               </div>
             </div>
