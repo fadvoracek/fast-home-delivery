@@ -38,7 +38,9 @@ const Hero = () => {
             Specializujeme se na přepravu elektroniky, nábytku a profesionální montáže spotřebičů a kuchyní.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-12 mt-6 sm:mt-0 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+          </div>
+          <div className="flex-1 min-h-8 sm:min-h-0" />
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-12 animate-fade-up" style={{ animationDelay: "0.3s" }}>
             <Button variant="hero" size="lg" asChild>
               <a href="#kontakt">
                 Nezávazná poptávka
