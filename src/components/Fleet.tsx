@@ -59,7 +59,7 @@ const Fleet = () => {
             Vozový park
           </span>
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-3 sm:mb-6">
-            Více než 60 vozidel
+            Více než 80 vozidel
           </h2>
           <p className="text-muted-foreground text-sm sm:text-lg max-w-2xl mx-auto">
             Disponujeme moderním vozovým parkem pro jakýkoli typ přepravy. 
