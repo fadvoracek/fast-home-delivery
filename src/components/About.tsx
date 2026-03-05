@@ -3,7 +3,7 @@ import courier from "@/assets/courier-1.jpg";
 
 const features = [
   "Více než 80 vozidel v provozu",
-  "Zkušený tým kurýrů a montérů",
+  "Zkušený tým kurýrů, montérů a řidičů",
   "Pokrytí celé České republiky",
   "Expresní doručení tentýž den",
   "Profesionální montážní služby",
