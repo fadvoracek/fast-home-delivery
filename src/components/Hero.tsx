@@ -31,10 +31,9 @@ const Hero = () => {
             <span className="text-card/90 text-xs sm:text-sm font-medium">Váš spolehlivý dopravní partner</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-card leading-tight sm:[line-height:1.4] mb-5 sm:mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            <span className="hidden sm:inline">Doprava</span>
-            <span className="sm:hidden">Přeprava</span> a{" "}
-            <span className="text-secondary">montáže</span>{" "}
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-card leading-tight sm:[line-height:1.55] mb-5 sm:mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+            Doprava a <span className="text-secondary">montáže</span>
+            <br className="hidden sm:block" />
             po celé ČR a EU
           </h1>
 
