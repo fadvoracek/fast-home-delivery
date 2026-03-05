@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-courier.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[85vh] sm:min-h-screen flex items-center pt-24 sm:pt-32 pb-12 sm:pb-20 overflow-hidden overflow-x-hidden">
+    <section className="relative min-h-screen sm:min-h-screen flex items-center pt-28 sm:pt-32 pb-16 sm:pb-20 overflow-hidden overflow-x-hidden">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -25,14 +25,16 @@ const Hero = () => {
             <span className="text-card/90 text-xs sm:text-sm font-medium">Váš spolehlivý dopravní partner</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-card leading-tight mb-4 sm:mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-card leading-tight mb-5 sm:mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
             Doprava zásilek a{" "}
             <span className="text-secondary">montáže</span>{" "}
-            po celé ČR
+            po celé ČR a EU
           </h1>
 
-          <p className="text-base sm:text-xl text-card/80 mb-6 sm:mb-8 leading-relaxed animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            Jsme česká dopravní společnost s více než 60 vozidly. Specializujeme se na přepravu elektroniky, nábytku a profesionální montáže spotřebičů a kuchyní.
+          <p className="text-base sm:text-xl text-card/80 mb-8 sm:mb-8 leading-relaxed animate-fade-up" style={{ animationDelay: "0.2s" }}>
+            Jsme česká dopravní společnost s více než 60 vozidly.
+            <br className="sm:hidden" />{" "}
+            Specializujeme se na přepravu elektroniky, nábytku a profesionální montáže spotřebičů a kuchyní.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-12 animate-fade-up" style={{ animationDelay: "0.3s" }}>
