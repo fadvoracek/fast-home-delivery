@@ -19,7 +19,8 @@ const Hero = () => {
       <div className="hidden md:block absolute bottom-1/4 left-10 w-96 h-96 bg-primary/30 rounded-full blur-3xl" />
 
       <div className="container-wide px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl flex flex-col h-full">
+          <div>
           <div className="inline-flex items-center gap-2 bg-card/10 backdrop-blur-sm border border-card/20 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 mb-4 sm:mb-6 animate-fade-up">
             <span className="w-2 h-2 bg-secondary rounded-full animate-pulse-soft" />
             <span className="text-card/90 text-xs sm:text-sm font-medium">Váš spolehlivý dopravní partner</span>
