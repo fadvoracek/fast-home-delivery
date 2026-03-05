@@ -27,15 +27,15 @@ const Hero = () => {
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-card leading-tight mb-5 sm:mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            Doprava zásilek a{" "}
+            Přeprava a{" "}
             <span className="text-secondary">montáže</span>{" "}
             po celé ČR a EU
           </h1>
 
           <p className="text-base sm:text-xl text-card/80 mb-8 sm:mb-8 leading-relaxed animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            Jsme česká dopravní společnost s více než 60 vozidly.
+            Jsme česká autodoprava s téměř 80 vozidly — od malých dodávek, přes plachtové vozy a kamiony až po nadrozměrnou a kontejnerovou přepravu.
             <br className="sm:hidden" />{" "}
-            Specializujeme se na přepravu elektroniky, nábytku a profesionální montáže spotřebičů a kuchyní.
+            Specializujeme se na přepravu a montáž elektroniky a nábytku.
           </p>
 
           </div>
@@ -59,7 +59,7 @@ const Hero = () => {
                 <Truck className="w-4 h-4 sm:w-6 sm:h-6 text-secondary" />
               </div>
               <div>
-                <span className="text-lg sm:text-2xl font-bold text-card">60+</span>
+                <span className="text-lg sm:text-2xl font-bold text-card">80</span>
                 <p className="text-card/70 text-xs sm:text-sm">vozidel</p>
               </div>
             </div>
