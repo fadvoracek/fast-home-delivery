@@ -1,79 +1,59 @@
-import { Mail, Phone } from "lucide-react";
+import { Radio, FileCheck, ShieldCheck, Banknote } from "lucide-react";
 
-const teamMembers = [
+const reasons = [
   {
-    name: "Jiří Dvořáček MBA",
-    role: "Jednatel společnosti",
-    email: "dvoracek@fa-dvoracek.cz",
-    phone: "+420 732 345 136",
+    icon: Radio,
+    title: "24/7 dispečink",
+    description: "Nepřetržitý dispečink s online monitoringem všech vozidel v reálném čase.",
   },
   {
-    name: "Simona Lhotková",
-    role: "Manažerka XL služeb a balíkové přepravy",
-    email: "lhotkova@fa-dvoracek.cz",
-    phone: "+420 603 960 784",
+    icon: FileCheck,
+    title: "Koncese na dopravu",
+    description: "Koncesní listina pro dopravu do 3,5 t i nad 3,5 t po celé ČR a Evropě.",
   },
   {
-    name: "Karolína Sonhot",
-    role: "Personální manažerka a administrativní podpora",
-    email: "sonhot@fa-dvoracek.cz",
-    phone: "+420 605 432 123",
+    icon: ShieldCheck,
+    title: "ADR licence",
+    description: "Oprávnění pro přepravu nebezpečných látek – plynů dle dohody ADR.",
   },
   {
-    name: "Pavol Srp",
-    role: "Manažer služeb výdejních boxů a dispečinku",
-    email: "dispecink@fa-dvoracek.cz",
-    phone: "+420 123 456 789",
+    icon: Banknote,
+    title: "Pojištění na 10 mil. Kč",
+    description: "Komplexní pojištění vozidel i přepravovaného nákladu až do výše 10 milionů Kč.",
   },
 ];
 
 const Team = () => {
   return (
-    <section id="tym" className="section-padding !pt-0 bg-background">
+    <section id="proc-nas" className="section-padding !pt-0 bg-background">
       <div className="container-wide">
-        <div className="text-center mb-6">
+        <div className="text-center mb-8 sm:mb-12">
           <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-4">
-            Náš tým
+            Naše výhody
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Lidé, kteří stojí za naším úspěchem
+            Proč právě nás?
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Poznejte náš zkušený tým profesionálů, kteří se každý den starají o vaše zásilky.
+            Garantujeme profesionální přístup, bezpečnost a spolehlivost na každém kilometru.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {teamMembers.map((member, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {reasons.map((reason, index) => (
             <div
               key={index}
-              className="bg-card rounded-xl p-6 shadow-soft hover:shadow-lg transition-all duration-300 border border-border/50 group hover:border-primary/30"
+              className="bg-card rounded-xl p-6 shadow-soft hover:shadow-lg transition-all duration-300 border border-border/50 group hover:border-primary/30 text-center"
             >
-              <div className="border-l-4 border-primary pl-4 mb-4">
-                <h3 className="text-lg font-bold text-foreground">
-                  {member.name}
-                </h3>
-                <p className="text-secondary text-sm font-medium">
-                  {member.role}
-                </p>
+              <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+                <reason.icon className="w-7 h-7 text-primary" />
               </div>
-              
-              <div className="space-y-2">
-                <a
-                  href={`mailto:${member.email}`}
-                  className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm"
-                >
-                  <Mail className="w-4 h-4 shrink-0" />
-                  <span className="truncate">{member.email}</span>
-                </a>
-                <a
-                  href={`tel:${member.phone.replace(/\s/g, '')}`}
-                  className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm"
-                >
-                  <Phone className="w-4 h-4 shrink-0" />
-                  <span>{member.phone}</span>
-                </a>
-              </div>
+              <h3 className="text-lg font-bold text-foreground mb-2">
+                {reason.title}
+              </h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                {reason.description}
+              </p>
             </div>
           ))}
         </div>
