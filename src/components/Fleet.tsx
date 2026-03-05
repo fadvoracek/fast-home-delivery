@@ -98,7 +98,7 @@ const Fleet = () => {
         {/* Stats bar */}
         <div className="mt-8 sm:mt-16 bg-gradient-primary rounded-xl sm:rounded-2xl p-4 sm:p-8 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
           {[
-            { value: "60+", label: "Dodávkových vozidel" },
+            { value: "80+", label: "Dodávkových vozidel" },
             { value: "3+", label: "Kamionů" },
             { value: "100%", label: "Pokrytí ČR" },
             { value: "24/7", label: "Dispečink" },
