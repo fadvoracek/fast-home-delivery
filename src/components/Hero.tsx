@@ -59,12 +59,12 @@ const Hero = () => {
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-card leading-tight sm:[line-height:1.2] mb-6 sm:mb-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            <span className="block overflow-hidden h-[1.3em] sm:h-[1.3em]">
+            <span className="block h-[1.3em] sm:h-[1.3em]">
               <span
-                className={`block text-secondary transition-all duration-400 ${
+                className={`block text-secondary transition-all duration-500 ${
                   isAnimating
-                    ? "translate-y-full opacity-0"
-                    : "translate-y-0 opacity-100"
+                    ? "opacity-0 blur-md scale-95"
+                    : "opacity-100 blur-0 scale-100"
                 }`}
               >
                 {rotatingTexts[currentIndex]}
