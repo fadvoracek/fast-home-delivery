@@ -113,7 +113,7 @@ const Contact = () => {
           </div>
 
           {/* Contact form */}
-          <div className="bg-card rounded-xl sm:rounded-2xl p-5 sm:p-8 border border-border">
+          <div className="bg-card rounded-xl sm:rounded-2xl p-5 sm:p-8 border border-border flex flex-col">
             <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 sm:mb-6">
               Pošlete nám zprávu
             </h3>
