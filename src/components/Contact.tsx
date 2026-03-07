@@ -48,10 +48,10 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-6 sm:gap-12">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-12 items-stretch">
           {/* Contact info */}
-          <div>
-            <div className="bg-gradient-primary rounded-xl sm:rounded-2xl p-5 sm:p-8 mb-6 sm:mb-8">
+          <div className="flex flex-col">
+            <div className="bg-gradient-primary rounded-xl sm:rounded-2xl p-5 sm:p-8 flex-1 flex flex-col">
               <h3 className="text-xl sm:text-2xl font-bold text-primary-foreground mb-4 sm:mb-6">
                 FA Dvořáček s.r.o.
               </h3>
