@@ -29,8 +29,11 @@ const Clients = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
           {clients.map((client) => (
-            <div
+            <a
               key={client.name}
+              href={client.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group flex items-center justify-center p-4 h-24"
             >
               <img
@@ -38,7 +41,7 @@ const Clients = () => {
                 alt={`Logo ${client.name}`}
                 className="max-h-12 max-w-full object-contain grayscale opacity-60 transition-all duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110"
               />
-            </div>
+            </a>
           ))}
         </div>
       </div>
