@@ -118,10 +118,10 @@ const Career = () => {
                 </div>
                 <div className="flex flex-wrap gap-2">
                   <span className="inline-flex items-center gap-1 text-xs sm:text-sm text-muted-foreground">
-                    📍 {position.location}
+                    <MapPin className="w-3.5 h-3.5" /> {position.location}
                   </span>
                   <span className="inline-flex items-center gap-1 text-xs sm:text-sm text-muted-foreground">
-                    💼 {position.type}
+                    <Briefcase className="w-3.5 h-3.5" /> {position.type}
                   </span>
                 </div>
               </div>
