@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Banknote, Car, Clock, Users, ArrowRight } from "lucide-react";
+import { MapPin, Briefcase, Mail, Phone, Banknote, Car, Clock, Users, ArrowRight } from "lucide-react";
 import careerCourier from "@/assets/career-courier.png";
 
 const benefits = [
@@ -117,10 +117,10 @@ const Career = () => {
                 </div>
                 <div className="flex flex-wrap gap-2">
                   <span className="inline-flex items-center gap-1 text-xs sm:text-sm text-muted-foreground">
-                    📍 {position.location}
+                    <MapPin className="w-3.5 h-3.5" /> {position.location}
                   </span>
                   <span className="inline-flex items-center gap-1 text-xs sm:text-sm text-muted-foreground">
-                    💼 {position.type}
+                    <Briefcase className="w-3.5 h-3.5" /> {position.type}
                   </span>
                 </div>
               </div>
@@ -161,10 +161,10 @@ const Career = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-2">
               <Button variant="heroOutline" size="sm" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10" asChild>
-                <a href="mailto:info@fa-dvoracek.cz">📧 info@fa-dvoracek.cz</a>
+                <a href="mailto:info@fa-dvoracek.cz"><Mail className="w-4 h-4" /> info@fa-dvoracek.cz</a>
               </Button>
               <Button variant="heroOutline" size="sm" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10" asChild>
-                <a href="tel:+420732345136">📞 +420 732 345 136</a>
+                <a href="tel:+420732345136"><Phone className="w-4 h-4" /> +420 732 345 136</a>
               </Button>
             </div>
           </div>
