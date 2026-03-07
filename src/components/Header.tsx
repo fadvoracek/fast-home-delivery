@@ -30,6 +30,13 @@ const Header = () => {
               <span className="hidden xs:inline sm:inline">info@fa-dvoracek.cz</span>
               <span className="xs:hidden sm:hidden">Email</span>
             </a>
+            <div className="flex items-center gap-1 sm:gap-1.5 ml-1 sm:ml-2">
+              <span className="relative flex h-2 w-2 sm:h-2.5 sm:w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 sm:h-2.5 sm:w-2.5 bg-green-500"></span>
+              </span>
+              <span className="text-green-400 font-semibold text-[10px] sm:text-xs uppercase tracking-wide">Online</span>
+            </div>
           </div>
           <span className="text-primary-foreground/80 hidden md:block">Doprava po celé ČR a Evropě</span>
         </div>
