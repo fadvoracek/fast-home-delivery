@@ -10,6 +10,7 @@ const Header = () => {
     { href: "#sluzby", label: "Služby" },
     { href: "#vozidla", label: "Vozový park" },
     { href: "#o-nas", label: "O nás" },
+    { href: "#proc-nas", label: "Proč my?" },
     { href: "#kariera", label: "Kariéra" },
     { href: "#kontakt", label: "Kontakt" },
   ];
@@ -33,46 +34,42 @@ const Header = () => {
           <span className="text-primary-foreground/80 hidden md:block">Doprava po celé ČR a Evropě</span>
         </div>
       </div>
-
       {/* Main nav */}
       <nav className="container-wide py-4 px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <a href="#" className="flex items-center">
-            <img 
-              src={logo} 
-              alt="FA Dvořáček s.r.o." 
+            <img
+              src={logo}
+              alt="FA Dvořáček s.r.o."
               className="h-10 sm:h-12 w-auto"
             />
           </a>
-
           {/* Desktop nav */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-6 xl:gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-foreground/80 hover:text-primary font-medium transition-colors"
+                className="text-foreground/80 hover:text-primary font-medium transition-colors text-sm xl:text-base"
               >
                 {link.label}
               </a>
             ))}
           </div>
-
           <div className="hidden lg:flex items-center gap-4">
             <Button variant="secondary" size="lg" asChild>
               <a href="#kontakt">Poptávka</a>
             </Button>
           </div>
-
           {/* Mobile menu button */}
           <button
             className="lg:hidden p-2 text-foreground"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Otevřít menu"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
-
         {/* Mobile menu */}
         {isMenuOpen && (
           <div className="lg:hidden mt-4 pb-4 border-t border-border pt-4 animate-fade-in">

@@ -16,11 +16,10 @@ const Footer = () => {
               />
             </div>
             <p className="text-background/70 text-sm leading-relaxed">
-              Česká dopravní a logistická společnost s více než 40 vozidly. 
+              Česká dopravní a logistická společnost s více než 80 vozidly.
               Specializujeme se na přepravu elektroniky, nábytku a profesionální montáže.
             </p>
           </div>
-
           {/* Services */}
           <div>
             <h4 className="font-semibold text-background mb-4">Služby</h4>
@@ -32,18 +31,17 @@ const Footer = () => {
               <li><a href="#sluzby" className="hover:text-secondary transition-colors">Montáže kuchyní</a></li>
             </ul>
           </div>
-
           {/* Quick links */}
           <div>
             <h4 className="font-semibold text-background mb-4">Užitečné odkazy</h4>
             <ul className="space-y-2 text-background/70 text-sm">
               <li><a href="#o-nas" className="hover:text-secondary transition-colors">O společnosti</a></li>
               <li><a href="#vozidla" className="hover:text-secondary transition-colors">Vozový park</a></li>
+              <li><a href="#proc-nas" className="hover:text-secondary transition-colors">Proč my?</a></li>
               <li><a href="#kariera" className="hover:text-secondary transition-colors">Kariéra</a></li>
               <li><a href="#kontakt" className="hover:text-secondary transition-colors">Kontakt</a></li>
             </ul>
           </div>
-
           {/* Contact */}
           <div>
             <h4 className="font-semibold text-background mb-4">Kontakt</h4>
@@ -67,14 +65,13 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-
         <div className="border-t border-background/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-background/50 text-sm">
-            © 2024 FA Dvořáček s.r.o. Všechna práva vyhrazena.
+            © 2025 FA Dvořáček s.r.o. Všechna práva vyhrazena.
           </p>
           <div className="flex gap-6 text-background/50 text-sm">
-            <a href="#" className="hover:text-secondary transition-colors">Ochrana osobních údajů</a>
-            <a href="#" className="hover:text-secondary transition-colors">Obchodní podmínky</a>
+            <a href="/ochrana-osobnich-udaju" className="hover:text-secondary transition-colors">Ochrana osobních údajů</a>
+            <a href="/obchodni-podminky" className="hover:text-secondary transition-colors">Obchodní podmínky</a>
           </div>
         </div>
       </div>
