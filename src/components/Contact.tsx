@@ -48,10 +48,10 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-6 sm:gap-12">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-12 items-stretch">
           {/* Contact info */}
-          <div>
-            <div className="bg-gradient-primary rounded-xl sm:rounded-2xl p-5 sm:p-8 mb-6 sm:mb-8">
+          <div className="flex flex-col">
+            <div className="bg-gradient-primary rounded-xl sm:rounded-2xl p-5 sm:p-8 flex-1 flex flex-col">
               <h3 className="text-xl sm:text-2xl font-bold text-primary-foreground mb-4 sm:mb-6">
                 FA Dvořáček s.r.o.
               </h3>
@@ -113,11 +113,11 @@ const Contact = () => {
           </div>
 
           {/* Contact form */}
-          <div className="bg-card rounded-xl sm:rounded-2xl p-5 sm:p-8 border border-border">
+          <div className="bg-card rounded-xl sm:rounded-2xl p-5 sm:p-8 border border-border flex flex-col">
             <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 sm:mb-6">
               Pošlete nám zprávu
             </h3>
-            <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4 flex-1 flex flex-col">
               <div className="grid grid-cols-2 gap-3 sm:gap-4">
                 <div>
                   <label className="block text-xs sm:text-sm font-medium text-foreground mb-1.5 sm:mb-2">
@@ -158,7 +158,7 @@ const Contact = () => {
                   placeholder="jan@email.cz"
                 />
               </div>
-              <div>
+              <div className="flex-1 flex flex-col">
                 <label className="block text-xs sm:text-sm font-medium text-foreground mb-1.5 sm:mb-2">
                   Zpráva *
                 </label>
@@ -167,7 +167,7 @@ const Contact = () => {
                   rows={3}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg sm:rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
+                  className="w-full flex-1 min-h-[80px] px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg sm:rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
                   placeholder="Napište nám váš dotaz nebo poptávku..."
                 />
               </div>
