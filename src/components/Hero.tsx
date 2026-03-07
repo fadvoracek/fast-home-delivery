@@ -56,10 +56,10 @@ const Hero = () => {
             <span className="text-card/90 text-xs sm:text-sm font-medium">Váš spolehlivý dopravní partner</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-card leading-tight sm:[line-height:1.55] mb-5 sm:mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            <span className="inline-block overflow-hidden h-[1.2em] sm:h-[1.6em] align-bottom">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-card leading-tight sm:[line-height:1.2] mb-6 sm:mb-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+            <span className="block overflow-hidden h-[1.3em] sm:h-[1.3em]">
               <span
-                className={`inline-block text-secondary transition-all duration-400 ${
+                className={`block text-secondary transition-all duration-400 ${
                   isAnimating
                     ? "translate-y-full opacity-0"
                     : "translate-y-0 opacity-100"
@@ -68,8 +68,7 @@ const Hero = () => {
                 {rotatingTexts[currentIndex]}
               </span>
             </span>
-            <br className="hidden sm:block" />
-            po celé ČR a EU
+            <span className="block">po celé ČR a EU</span>
           </h1>
 
           <p className="text-base sm:text-xl text-card/80 mb-8 sm:mb-8 leading-relaxed animate-fade-up" style={{ animationDelay: "0.2s" }}>
