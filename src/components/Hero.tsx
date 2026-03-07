@@ -36,7 +36,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-dvh flex items-stretch sm:items-center pt-32 sm:pt-32 pb-16 sm:pb-20 overflow-hidden overflow-x-hidden">
+    <section className="relative min-h-dvh flex items-stretch sm:items-center pt-32 sm:pt-32 pb-20 sm:pb-20 overflow-hidden overflow-x-hidden" style={{ paddingBottom: 'max(5rem, calc(1.25rem + env(safe-area-inset-bottom)))' }}>
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
