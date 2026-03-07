@@ -110,20 +110,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-
-            {/* Google Maps */}
-            <div className="rounded-xl sm:rounded-2xl overflow-hidden border border-border h-48 sm:h-64">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.5!2d14.3434!3d50.0578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b966f1e6e1e1d%3A0x0!2sKurzova%202222%2F16%2C%20155%2000%20Praha!5e0!3m2!1scs!2scz!4v1700000000000!5m2!1scs!2scz"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Sídlo FA Dvořáček s.r.o."
-              />
-            </div>
           </div>
 
           {/* Contact form */}
@@ -132,31 +118,18 @@ const Contact = () => {
               Pošlete nám zprávu
             </h3>
             <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
-              <div>
-                <label className="block text-xs sm:text-sm font-medium text-foreground mb-1.5 sm:mb-2">
-                  Jméno a příjmení *
-                </label>
-                <input
-                  type="text"
-                  required
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg sm:rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                  placeholder="Jan Novák"
-                />
-              </div>
               <div className="grid grid-cols-2 gap-3 sm:gap-4">
                 <div>
                   <label className="block text-xs sm:text-sm font-medium text-foreground mb-1.5 sm:mb-2">
-                    E-mail *
+                    Jméno a příjmení *
                   </label>
                   <input
-                    type="email"
+                    type="text"
                     required
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg sm:rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                    placeholder="jan@email.cz"
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    className="w-full px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg sm:rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                    placeholder="Jan Novák"
                   />
                 </div>
                 <div>
@@ -167,10 +140,23 @@ const Contact = () => {
                     type="tel"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg sm:rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg sm:rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                     placeholder="+420 123 456 789"
                   />
                 </div>
+              </div>
+              <div>
+                <label className="block text-xs sm:text-sm font-medium text-foreground mb-1.5 sm:mb-2">
+                  E-mail *
+                </label>
+                <input
+                  type="email"
+                  required
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  className="w-full px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg sm:rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                  placeholder="jan@email.cz"
+                />
               </div>
               <div>
                 <label className="block text-xs sm:text-sm font-medium text-foreground mb-1.5 sm:mb-2">
@@ -178,10 +164,10 @@ const Contact = () => {
                 </label>
                 <textarea
                   required
-                  rows={4}
+                  rows={3}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg sm:rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg sm:rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
                   placeholder="Napište nám váš dotaz nebo poptávku..."
                 />
               </div>
@@ -191,6 +177,20 @@ const Contact = () => {
               </Button>
             </form>
           </div>
+        </div>
+
+        {/* Full-width Google Maps with dark style */}
+        <div className="mt-8 sm:mt-12 rounded-xl sm:rounded-2xl overflow-hidden border border-border h-56 sm:h-80 relative">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.5!2d14.3434!3d50.0578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b966f1e6e1e1d%3A0x0!2sKurzova%202222%2F16%2C%20155%2000%20Praha!5e0!3m2!1scs!2scz!4v1700000000000!5m2!1scs!2scz"
+            width="100%"
+            height="100%"
+            style={{ border: 0, filter: "grayscale(100%) contrast(1.1) brightness(0.9)" }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Sídlo FA Dvořáček s.r.o."
+          />
         </div>
       </div>
     </section>
