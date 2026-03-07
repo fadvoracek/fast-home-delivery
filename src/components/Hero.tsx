@@ -57,7 +57,17 @@ const Hero = () => {
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-card leading-tight sm:[line-height:1.55] mb-5 sm:mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            Doprava a <span className="text-secondary">montáže</span>
+            <span className="inline-block overflow-hidden h-[1.2em] sm:h-[1.6em] align-bottom">
+              <span
+                className={`inline-block text-secondary transition-all duration-400 ${
+                  isAnimating
+                    ? "translate-y-full opacity-0"
+                    : "translate-y-0 opacity-100"
+                }`}
+              >
+                {rotatingTexts[currentIndex]}
+              </span>
+            </span>
             <br className="hidden sm:block" />
             po celé ČR a EU
           </h1>
