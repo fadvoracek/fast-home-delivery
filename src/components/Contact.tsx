@@ -98,18 +98,31 @@ const Contact = () => {
                     <div className="font-semibold text-sm sm:text-base">Po–Ne: 6:00 – 20:00</div>
                   </div>
                 </div>
+
+                {/* Fakturační údaje */}
+                <div className="border-t border-primary-foreground/20 pt-3 sm:pt-4 mt-3 sm:mt-4">
+                  <h4 className="font-semibold text-primary-foreground text-sm sm:text-base mb-2">Fakturační údaje</h4>
+                  <div className="text-primary-foreground/80 space-y-0.5 text-xs sm:text-sm">
+                    <p>IČO: 17854938</p>
+                    <p>DIČ: CZ17854938</p>
+                    <p className="text-primary-foreground/60 text-[11px] sm:text-xs mt-1">Zapsána v OR vedeném Městským soudem v Praze, oddíl C, vložka 377559.</p>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="bg-muted rounded-xl sm:rounded-2xl p-4 sm:p-6">
-              <h4 className="font-semibold text-foreground mb-2 sm:mb-3 text-sm sm:text-base">Fakturační údaje</h4>
-              <div className="text-muted-foreground space-y-1 text-xs sm:text-sm">
-                <p><strong>FA Dvořáček s.r.o.</strong></p>
-                <p>Kurzova 2222/16, 155 00 Praha</p>
-                <p>IČO: 17854938</p>
-                <p>DIČ: CZ17854938</p>
-                <p>Společnost je zapsána v obchodním rejstříku vedeném Městským soudem v Praze oddíl C, vložka 377559.</p>
-              </div>
+            {/* Google Maps */}
+            <div className="rounded-xl sm:rounded-2xl overflow-hidden border border-border h-48 sm:h-64">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.5!2d14.3434!3d50.0578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b966f1e6e1e1d%3A0x0!2sKurzova%202222%2F16%2C%20155%2000%20Praha!5e0!3m2!1scs!2scz!4v1700000000000!5m2!1scs!2scz"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Sídlo FA Dvořáček s.r.o."
+              />
             </div>
           </div>
 
