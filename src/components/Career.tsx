@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { MapPin, Briefcase, Mail, Phone } from "lucide-react";
 import { Banknote, Car, Clock, Users, ArrowRight } from "lucide-react";
 import careerCourier from "@/assets/career-courier.png";
 
