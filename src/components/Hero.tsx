@@ -7,11 +7,13 @@ import heroImage from "@/assets/hero-courier.jpg";
 const rotatingTexts = [
   "Autodoprava",
   "Paletová přeprava",
-  "Kamionová doprava",
   "Montáže spotřebičů",
   "Nadrozměrná přeprava",
   "Doručení zásilek",
   "Zásobování boxů",
+  "Kontejnerová doprava",
+  "Přeprava vozidel",
+  "Expresní doprava",
 ];
 
 const Hero = () => {
