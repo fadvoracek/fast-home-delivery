@@ -139,9 +139,12 @@ const Career = () => {
                 </ul>
               </div>
 
-              <Button className="w-full" size="sm">
-                Mám zájem
-                <ArrowRight className="w-4 h-4" />
+              {/* Tlačítko nyní scrolluje na kontaktní sekci */}
+              <Button className="w-full" size="sm" asChild>
+                <a href="#kontakt">
+                  Mám zájem
+                  <ArrowRight className="w-4 h-4" />
+                </a>
               </Button>
             </div>
           ))}
@@ -157,11 +160,11 @@ const Career = () => {
               Pošli nám životopis nebo zavolej pro nezávazné setkání
             </p>
             <div className="flex flex-col sm:flex-row gap-2">
-              <Button variant="heroOutline" size="sm" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
-                📧 info@fa-dvoracek.cz
+              <Button variant="heroOutline" size="sm" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10" asChild>
+                <a href="mailto:info@fa-dvoracek.cz">📧 info@fa-dvoracek.cz</a>
               </Button>
-              <Button variant="heroOutline" size="sm" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
-                📞 +420 732 345 136
+              <Button variant="heroOutline" size="sm" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10" asChild>
+                <a href="tel:+420732345136">📞 +420 732 345 136</a>
               </Button>
             </div>
           </div>

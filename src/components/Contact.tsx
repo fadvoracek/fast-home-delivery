@@ -10,13 +10,25 @@ const Contact = () => {
     phone: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+
+    // Sestavení mailto odkazu jako fallback
+    const subject = encodeURIComponent(`Poptávka od ${formData.name}`);
+    const body = encodeURIComponent(
+      `Jméno: ${formData.name}\nE-mail: ${formData.email}\nTelefon: ${formData.phone}\n\nZpráva:\n${formData.message}`
+    );
+    window.location.href = `mailto:info@fa-dvoracek.cz?subject=${subject}&body=${body}`;
+
     toast({
-      title: "Zpráva odeslána!",
-      description: "Děkujeme za váš dotaz. Ozveme se vám co nejdříve.",
+      title: "Zpráva připravena!",
+      description: "Otevře se váš e-mailový klient s předvyplněnou zprávou.",
     });
+
+    setIsSubmitting(false);
     setFormData({ name: "", email: "", phone: "", message: "" });
   };
 
@@ -31,7 +43,7 @@ const Contact = () => {
             Spojte se s námi
           </h2>
           <p className="text-muted-foreground text-sm sm:text-lg max-w-2xl mx-auto">
-            Máte dotaz nebo zájem o naše služby? Neváhejte nás kontaktovat. 
+            Máte dotaz nebo zájem o naše služby? Neváhejte nás kontaktovat.
             Rádi vám připravíme nezávaznou nabídku.
           </p>
         </div>
@@ -94,8 +106,9 @@ const Contact = () => {
               <div className="text-muted-foreground space-y-1 text-xs sm:text-sm">
                 <p><strong>FA Dvořáček s.r.o.</strong></p>
                 <p>Kurzova 2222/16, 155 00 Praha</p>
-                <p>IČO: 12345678</p>
-                <p>DIČ: CZ12345678</p>
+                {/* ⚠️ DŮLEŽITÉ: Nahraďte níže skutečným IČO a DIČ vaší společnosti! */}
+                <p>IČO: DOPLŇTE_IČO</p>
+                <p>DIČ: DOPLŇTE_DIČ</p>
                 <p>Společnost je zapsána v obchodním rejstříku vedeném Městským soudem v Praze oddíl C, vložka 377559.</p>
               </div>
             </div>
@@ -160,8 +173,8 @@ const Contact = () => {
                   placeholder="Napište nám váš dotaz nebo poptávku..."
                 />
               </div>
-              <Button type="submit" size="lg" className="w-full">
-                Odeslat zprávu
+              <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+                {isSubmitting ? "Odesílám..." : "Odeslat zprávu"}
                 <Send className="w-4 h-4" />
               </Button>
             </form>
