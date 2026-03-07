@@ -1,12 +1,37 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Truck, Package, Wrench } from "lucide-react";
 import { useCountUp } from "@/hooks/use-count-up";
+import { useState, useEffect } from "react";
 import heroImage from "@/assets/hero-courier.jpg";
+
+const rotatingTexts = [
+  "Autodoprava",
+  "Paletová přeprava",
+  "Kamionová doprava",
+  "Montáže spotřebičů",
+  "Nadrozměrná přeprava",
+  "Doručení zásilek",
+  "Zásobování boxů",
+];
 
 const Hero = () => {
   const vehicles = useCountUp(80, 1800);
   const shipments = useCountUp(100000, 2200);
   const satisfaction = useCountUp(100, 1500);
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsAnimating(true);
+      setTimeout(() => {
+        setCurrentIndex((prev) => (prev + 1) % rotatingTexts.length);
+        setIsAnimating(false);
+      }, 400);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className="relative min-h-screen flex items-stretch sm:items-center pt-32 sm:pt-32 pb-16 sm:pb-20 overflow-hidden overflow-x-hidden">
@@ -32,7 +57,17 @@ const Hero = () => {
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-card leading-tight sm:[line-height:1.55] mb-5 sm:mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            Doprava a <span className="text-secondary">montáže</span>
+            <span className="inline-block overflow-hidden h-[1.2em] sm:h-[1.6em] align-bottom">
+              <span
+                className={`inline-block text-secondary transition-all duration-400 ${
+                  isAnimating
+                    ? "translate-y-full opacity-0"
+                    : "translate-y-0 opacity-100"
+                }`}
+              >
+                {rotatingTexts[currentIndex]}
+              </span>
+            </span>
             <br className="hidden sm:block" />
             po celé ČR a EU
           </h1>
