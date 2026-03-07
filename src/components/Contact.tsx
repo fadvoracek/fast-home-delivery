@@ -158,7 +158,7 @@ const Contact = () => {
                   placeholder="jan@email.cz"
                 />
               </div>
-              <div>
+              <div className="flex-1 flex flex-col">
                 <label className="block text-xs sm:text-sm font-medium text-foreground mb-1.5 sm:mb-2">
                   Zpráva *
                 </label>
@@ -167,7 +167,7 @@ const Contact = () => {
                   rows={3}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg sm:rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
+                  className="w-full flex-1 min-h-[80px] px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg sm:rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
                   placeholder="Napište nám váš dotaz nebo poptávku..."
                 />
               </div>
