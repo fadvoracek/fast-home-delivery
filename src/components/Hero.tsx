@@ -58,32 +58,32 @@ const Hero = () => {
           </div>
 
           {/* Quick stats */}
-          <div className="grid grid-cols-3 gap-3 sm:gap-6 animate-fade-up" style={{ animationDelay: "0.4s" }}>
-            <div className="flex items-center gap-2 sm:gap-3">
+          <div className="grid grid-cols-3 gap-3 sm:gap-6 animate-fade-up text-center sm:text-left" style={{ animationDelay: "0.4s" }}>
+            <div className="flex flex-col items-center justify-center gap-1 sm:flex-row sm:items-center sm:gap-3">
               <div className="w-9 h-9 sm:w-12 sm:h-12 bg-card/10 backdrop-blur-sm rounded-xl flex items-center justify-center">
                 <Truck className="w-4 h-4 sm:w-6 sm:h-6 text-secondary" />
               </div>
-              <div>
-                <span ref={vehicles.ref as React.RefObject<HTMLSpanElement>} className="text-lg sm:text-2xl font-bold text-card">{vehicles.count}+</span>
-                <p className="text-card/70 text-xs sm:text-sm">vozidel</p>
+              <div className="flex flex-col items-center sm:items-start min-w-0">
+                <span ref={vehicles.ref as React.RefObject<HTMLSpanElement>} className="text-lg sm:text-2xl font-bold text-card tabular-nums leading-none">{vehicles.count}+</span>
+                <p className="text-card/70 text-[11px] sm:text-sm leading-tight">vozidel</p>
               </div>
             </div>
-            <div className="flex items-center gap-2 sm:gap-3">
+            <div className="flex flex-col items-center justify-center gap-1 sm:flex-row sm:items-center sm:gap-3">
               <div className="w-9 h-9 sm:w-12 sm:h-12 bg-card/10 backdrop-blur-sm rounded-xl flex items-center justify-center">
                 <Package className="w-4 h-4 sm:w-6 sm:h-6 text-secondary" />
               </div>
-              <div>
-                <span ref={shipments.ref as React.RefObject<HTMLSpanElement>} className="text-base sm:text-2xl font-bold text-card">{shipments.count.toLocaleString("cs-CZ")}+</span>
-                <p className="text-card/70 text-xs sm:text-sm">zásilek/měsíc</p>
+              <div className="flex flex-col items-center sm:items-start min-w-0">
+                <span ref={shipments.ref as React.RefObject<HTMLSpanElement>} className="block w-full text-center sm:text-left text-base sm:text-2xl font-bold text-card tabular-nums leading-none">{shipments.count.toLocaleString("cs-CZ")}+</span>
+                <p className="text-card/70 text-[11px] sm:text-sm leading-tight">zásilek/měsíc</p>
               </div>
             </div>
-            <div className="flex items-center gap-2 sm:gap-3">
+            <div className="flex flex-col items-center justify-center gap-1 sm:flex-row sm:items-center sm:gap-3">
               <div className="w-9 h-9 sm:w-12 sm:h-12 bg-card/10 backdrop-blur-sm rounded-xl flex items-center justify-center">
                 <Wrench className="w-4 h-4 sm:w-6 sm:h-6 text-secondary" />
               </div>
-              <div>
-                <span ref={satisfaction.ref as React.RefObject<HTMLSpanElement>} className="text-lg sm:text-2xl font-bold text-card">{satisfaction.count}%</span>
-                <p className="text-card/70 text-xs sm:text-sm">spokojenost</p>
+              <div className="flex flex-col items-center sm:items-start min-w-0">
+                <span ref={satisfaction.ref as React.RefObject<HTMLSpanElement>} className="text-lg sm:text-2xl font-bold text-card tabular-nums leading-none">{satisfaction.count}%</span>
+                <p className="text-card/70 text-[11px] sm:text-sm leading-tight">spokojenost</p>
               </div>
             </div>
           </div>

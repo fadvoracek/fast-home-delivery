@@ -106,7 +106,16 @@
 
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 7rem;
+  }
+
+  :target {
+    scroll-margin-top: 7rem;
+  }
+
+  @media (max-width: 640px) {
+    :target {
+      scroll-margin-top: 8.5rem;
+    }
   }
 
   body {
