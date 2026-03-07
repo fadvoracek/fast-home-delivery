@@ -6,12 +6,12 @@ import gorenjeLogo from "@/assets/logos/gorenje.png";
 import decoledLogo from "@/assets/logos/decoled.png";
 
 const clients = [
-  { name: "Alza.cz", logo: alzaLogo },
-  { name: "DPD", logo: dpdLogo },
-  { name: "One by Allegro", logo: oneAllegroLogo },
-  { name: "Rhenus", logo: rhenusLogo },
-  { name: "Gorenje", logo: gorenjeLogo },
-  { name: "Decoled", logo: decoledLogo },
+  { name: "Alza.cz", logo: alzaLogo, url: "https://www.alza.cz" },
+  { name: "DPD", logo: dpdLogo, url: "https://www.dpd.com/cz/cs/" },
+  { name: "One by Allegro", logo: oneAllegroLogo, url: "https://onedelivery.cz" },
+  { name: "Rhenus", logo: rhenusLogo, url: "https://www.rhenus.group/cz/cs/" },
+  { name: "Gorenje", logo: gorenjeLogo, url: "https://cz.gorenje.com/kuchyne" },
+  { name: "Decoled", logo: decoledLogo, url: "https://www.decoled.cz" },
 ];
 
 const Clients = () => {
