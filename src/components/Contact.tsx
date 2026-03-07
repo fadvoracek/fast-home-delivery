@@ -117,7 +117,7 @@ const Contact = () => {
             <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 sm:mb-6">
               Pošlete nám zprávu
             </h3>
-            <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4 flex-1 flex flex-col">
               <div className="grid grid-cols-2 gap-3 sm:gap-4">
                 <div>
                   <label className="block text-xs sm:text-sm font-medium text-foreground mb-1.5 sm:mb-2">
