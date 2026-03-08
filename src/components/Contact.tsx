@@ -85,7 +85,7 @@ const Contact = () => {
                     <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div>
-                    <div className="text-xs sm:text-sm text-primary-foreground/70">Adresa</div>
+                    <div className="text-xs sm:text-sm text-primary-foreground/70">Korespondenční adresa</div>
                     <div className="font-semibold text-sm sm:text-base">Kurzova 2222/16, 155 00 Praha</div>
                   </div>
                 </div>
