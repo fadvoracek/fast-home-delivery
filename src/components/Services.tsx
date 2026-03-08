@@ -21,7 +21,7 @@ const services = [
   {
     icon: Box,
     title: "Zásobování výdejních boxů",
-    description: "Spolehlivé zásobování Alzaboxů a dalších výdejních míst. Pravidelné trasy s pevným rozvrhem a 100% spolehlivostí doručení.",
+    description: "Spolehlivé zásobování Alzaboxů a dalších výdejních míst. Pravidelné trasy s pevným rozvrhem a maximální spolehlivostí.",
   },
   {
     icon: Truck,
