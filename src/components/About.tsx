@@ -38,7 +38,7 @@ const About = () => {
                 </div>
               </div>
               <p className="text-muted-foreground text-xs sm:text-sm hidden sm:block">
-                Spolehlivý partner pro stovky spokojených klientů
+                Spolehlivý partner pro naše klienty
               </p>
             </div>
           </div>
