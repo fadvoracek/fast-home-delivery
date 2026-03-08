@@ -74,7 +74,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-base sm:text-xl text-card/80 mb-8 sm:mb-8 leading-relaxed animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            Jsme česká autodoprava s téměř 80 vozidly — od malých dodávek, přes plachtové vozy a kamiony až po nadrozměrnou a kontejnerovou přepravu.
+            Jsme česká autodoprava s téměř 80 vozidly – od malých dodávek, přes plachtové vozy a kamiony až po nadrozměrnou a kontejnerovou přepravu.
             <br className="sm:hidden" />{" "}
             Specializujeme se na přepravu a montáž elektroniky a nábytku.
           </p>
