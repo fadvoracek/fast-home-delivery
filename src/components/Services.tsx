@@ -6,7 +6,7 @@ const services = [
   {
     icon: Package,
     title: "Zásilková doprava",
-    description: "Expresní doručení balíků a zásilek po celé České republice. Denně rozvážíme tisíce zásilek s 99% úspěšností doručení.",
+    description: "Expresní doručení balíků a zásilek po celé České republice. Denně rozvážíme tisíce zásilek s důrazem na rychlost a spolehlivost.",
   },
   {
     icon: Truck,
@@ -21,7 +21,7 @@ const services = [
   {
     icon: Box,
     title: "Zásobování výdejních boxů",
-    description: "Spolehlivé zásobování Alzaboxů a dalších výdejních míst. Pravidelné trasy s pevným rozvrhem a 100% spolehlivostí doručení.",
+    description: "Spolehlivé zásobování Alzaboxů a dalších výdejních míst. Pravidelné trasy s pevným rozvrhem a maximální spolehlivostí.",
   },
   {
     icon: Truck,
