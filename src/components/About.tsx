@@ -53,7 +53,7 @@ const About = () => {
             </h2>
             <p className="text-muted-foreground text-sm sm:text-lg mb-3 sm:mb-6 leading-relaxed">
               Jsme česká dopravní a logistická společnost, která se specializuje na přepravu zásilek, 
-              velké elektroniky a nábytku. Naším hlavním aktivem je moderní vozový park čítající 
+              velké elektroniky a nábytku. Disponujeme moderním vozovým parkem čítajícím 
               více než 80 vozidel značek Fiat Ducato, Toyota Proace, Renault Master a Mercedes-Benz Actros.
             </p>
             <p className="text-muted-foreground text-sm sm:text-lg mb-6 sm:mb-8 leading-relaxed">
