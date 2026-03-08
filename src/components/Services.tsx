@@ -6,7 +6,7 @@ const services = [
   {
     icon: Package,
     title: "Zásilková doprava",
-    description: "Expresní doručení balíků a zásilek po celé České republice. Denně rozvážíme tisíce zásilek s 99% úspěšností doručení.",
+    description: "Expresní doručení balíků a zásilek po celé České republice. Denně rozvážíme tisíce zásilek s důrazem na rychlost a spolehlivost.",
   },
   {
     icon: Truck,
